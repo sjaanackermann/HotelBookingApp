@@ -98,28 +98,32 @@ require_once "incl/Hotel.php";
     <div class="field">
         <label class="label">Please select the two Hotels that you would like to compare below:</label>
         <p class="control">
-            <input type="checkbox" name="hotels"><img id="images" src="images/yotelMain.jpg" alt="Yotel Hotel" width="260px">
+            <input type="checkbox" name="hotels" value="Yotel Hotel"><img id="images" src="images/yotelMain.jpg" alt="Yotel Hotel" width="260px">
+            <h3>Yotel Hotel</h3>
             <p id="discrip">Located in Edinburgh and with EICC reachable within 1 km, YOTEL Edinburgh provides express check-in and check-out, rooms, a fitness centre, free WiFi throughout the property and a bar. The property is set 1.9 km from Edinburgh Playhouse, 2 km from Edinburgh Castle and 2 km from National Museum of Scotland. The hotel features family rooms.
             </p>
             <p><b>Daily Rate: R500</b></p>
             <br>
 
             <hr>
-            <input type="checkbox" name="hotels"><img id="images" src="images/ibisMain.jpg" alt="Ibis Hotel" width="260px">
+            <input type="checkbox" name="hotels" value="Ibis Hotel"><img id="images" src="images/ibisMain.jpg" alt="Ibis Hotel" width="260px">
+            <h3>Ibis Hotel</h3>
             <p id="discrip">Set in Glasgow, 1.1 km from Buchanan Galleries, ibis Styles Glasgow Centre West offers air-conditioned rooms and a bar. Among the facilities of this property are a restaurant, a 24-hour front desk and a shared lounge, along with free WiFi. The hotel features family rooms.
             </p>
             <p><b>Daily Rate: R750</b></p>
             <br>
 
             <hr>
-            <input type="checkbox" name="hotels"><img id="images" src="images/indigoMain.jpg" alt="Hotel Indigo" width="260px">
+            <input type="checkbox" name="hotels" value="Hotel Indigo"><img id="images" src="images/indigoMain.jpg" alt="Hotel Indigo" width="260px">
+            <h3>Hotel Indigo</h3>
             <p id="discrip">Boasting a bar and free WiFi, Hotel Indigo - Dundee is situated in Dundee, 1 km from Discovery Point. Around 1.4 km from University of Dundee and 2 km from Abertay University, the property is also close to Dundee Central Library. The property is located 400 m from Wellgate Shopping Centre.
             </p>
             <p><b>Daily Rate: R1000</b></p>
             <br>
 
             <hr>
-            <input type="checkbox" name="hotels"><img id="images" src="images/sandmanMain.jpg" alt="Sandman Hotel" width="260px">
+            <input type="checkbox" name="hotels" value="Sandman Hotel"><img id="images" src="images/sandmanMain.jpg" alt="Sandman Hotel" width="260px">
+            <h3>Sandman Hotel</h3>
             <p id="discrip">Sandman Signature Aberdeen Hotel can conveniently provide information at the reception to help guests to get around the area.
                 Popular points of interest near the accommodation include Beach Ballroom, Aberdeen Art Gallery and Bon Accord & St Nicholas. The nearest airport is Aberdeen Airport, 8 km from Sandman Signature Aberdeen Hotel.
             </p>
@@ -127,14 +131,16 @@ require_once "incl/Hotel.php";
             <br>
 
             <hr>
-            <input type="checkbox" name="hotels"><img id="images" src="images/sleeperzMain.jpg" alt="Sleeperz Hotel" width="260px">
+            <input type="checkbox" name="hotels" value="Sleeperz Hotel"><img id="images" src="images/sleeperzMain.jpg" alt="Sleeperz Hotel" width="260px">
+            <h3>Sleeperz Hotel</h3>
             <p id="discrip">Sleeperz Hotel Dundee is a 120-bedroom hotel located directly above Dundee Railway Station in the city centre, and directly opposite the V&A Dundee. Guests can enjoy views over the nearby V&A Museum Dundee, the River Tay and onto the Waterfront Plaza.
             </p>
             <p><b>Daily Rate: R600</b></p>
             <br>
 
             <hr>
-            <input type="checkbox" name="hotels"><img id="images" src="images/motelMain.jpg" alt="Motel One Hotel" width="260px">
+            <input type="checkbox" name="hotels" value="Motel One Hotel"><img id="images" src="images/motelMain.jpg" alt="Motel One Hotel" width="260px">
+            <h3>Motel One</h3>
             <p id="discrip">Boasting an excellent location in Glasgow city centre, Motel One Glasgow is next to Central Train Station and is only a 9-minute walk from George Square and Queen Street Train Station.
                 The Hotel is 200 m from the famous Buchanan Street Style Mile, while the Hydro is 1.6 km away. The Royal Concert Hall is 900 m from the property.
                 Glasgow City Centre is a great choice for travellers interested in shopping for clothes, shopping and nightlife.
@@ -143,13 +149,15 @@ require_once "incl/Hotel.php";
             <br>
 
             <hr>
-            <input type="checkbox" name="hotels"><img id="images" src="images/radissonMain.jpg" alt="Radisson Red Hotel" width="260px">
+            <input type="checkbox" name="hotels" value="Radisson Red Hotel"><img id="images" src="images/radissonMain.jpg" alt="Radisson Red Hotel" width="260px">
+            <h3>Radisson Red Hotel</h3>
             <p id="discrip">Radisson RED hotel in Glagsow features 174 rooms, 3 event and games studios, Glasgow’s first official rooftop bar, a fitness room and 76 car parking spaces. The property is located 183 m from The Hydro, and is a 4-minute walk from the SECC.</p>
             <p><b>Daily Rate: R900</b></p>
             <br>
 
             <hr>
-            <input type="checkbox" name="hotels"><img id="images" src="images/residenceMain.jpg" alt="Residence Inn" width="260px">
+            <input type="checkbox" name="hotels" value="Residence Inn"><img id="images" src="images/residenceMain.jpg" alt="Residence Inn" width="260px">
+            <h3>Residence Inn</h3>
             <p id="discrip">
                 Residence Inn by Marriott Aberdeen is set within a 20-minute walk from the beach in Aberdeen. Free WiFi is available. Bon Accord & St Nicholas shopping centre is less than 100 m from the hotel and Union Square shopping centre, Union Street and the Aberdeen Maritime Museum are only a few minutes’ walk away.
             </p>
@@ -157,14 +165,16 @@ require_once "incl/Hotel.php";
             <br>
 
             <hr>
-            <input type="checkbox" name="hotels"><img id="images" src="images/hamptonMain.jpg" alt="Hampton Hotel" width="260px">
+            <input type="checkbox" name="hotels" value="Hampton Hotel"><img id="images" src="images/hamptonMain.jpg" alt="Hampton Hotel" width="260px">
+            <h3>Hampton Hotel</h3>
             <p id="discrip">Set in Westhill, 12.9 km from Aberdeen, Hampton By Hilton Aberdeen Westhill features a 24-hour fitness centre and business facilities. Union Square Shopping Centre is 12.9 km from Hampton By Hilton Aberdeen Westhill, while the beach is 9.7 km away. The nearest airport is Aberdeen Airport, 11.3 km from the property. Aberdeen rail station is 12.9 km from Hampton By Hilton Aberdeen Westhill.
             </p>
             <p><b>Daily Rate: R1000</b></p>
             <br>
 
             <hr>
-            <input type="checkbox" name="hotels"><img id="images" src="images/alexandraMain.jpg" alt="Alexandra Hotel" width="260px">
+            <input type="checkbox" name="hotels" value="Alexandra Hotel"><img id="images" src="images/alexandraMain.jpg" alt="Alexandra Hotel" width="260px">
+            <h3>Alexandra Hotel</h3>
             <p id="discrip">Set in Ballater, 14 km from Balmoral Castle, Alexandra Hotel offers accommodation with a restaurant, free private parking and a bar. Around 14 km from Royal Lochnagar Distillery, the property is also 25 km away from Lecht 2090 ski & Multi activity centre and offers free WiFi.
             </p>
             <p><b>Daily Rate: R1200</b></p>
