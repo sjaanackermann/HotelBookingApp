@@ -38,7 +38,7 @@ try {
 
     //Recipients
     $mail->setFrom('ScotlandBookings@scotland.com', 'Mailer');
-    $mail->addAddress('joe@example.net', 'Average Joe');     // Add a recipient           
+    $mail->addAddress($_SESSION['email'], 'Client');     // Add a recipient           
     $mail->addReplyTo('info@example.com', 'Information');
 
     // Content
