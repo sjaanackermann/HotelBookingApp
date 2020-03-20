@@ -1,6 +1,8 @@
-<?php 
-//ADD EMAIL CODING TO THIS PAGE
-//require_once "incl/Email.php"
+<?php
+session_start();
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 ?>
 
 <!DOCTYPE html>
@@ -14,14 +16,43 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="column">
-        <!-- Box that displays if a booking is made -->
-        <div class="box" id="move">
-            <h1 class="title"> Thank you for booking! </h1>
-            <div class="control" id="cancel">
-                <a href ="index.php"> <button class="button">Home</button></a>
-            </div>
-        </div>
-    </div>
+<?php
+
+
+//Composer's autoloader
+require 'vendor/autoload.php';
+
+//Instantiation and passing `true` enables exceptions
+$mail = new PHPMailer(true);
+
+try {
+    //Server settings
+    $mail->SMTPDebug = 0;                      // Enable verbose debug output
+    $mail->isSMTP();                                            // Send using SMTP
+    $mail->Host       = 'smtp.mailtrap.io';                    // Set the SMTP server to send through
+    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+    $mail->Username   = '21f32e58d44adf';                     // SMTP username
+    $mail->Password   = '90c09616c21cc4';                               // SMTP password
+    $mail->SMTPSecure = 'TLS';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+    $mail->Port       = 25;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+
+    //Recipients
+    $mail->setFrom('ScotlandBookings@scotland.com', 'Mailer');
+    $mail->addAddress('joe@example.net', 'Average Joe');     // Add a recipient           
+    $mail->addReplyTo('info@example.com', 'Information');
+
+    // Content
+    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->Subject = 'Here is the subject';
+    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+    $mail->send();
+    echo 'Thank you for your Enquiry, we will be in touch shortly to finalise the booking!';
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
+
+?>
 </body>
 </html>

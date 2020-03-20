@@ -4,7 +4,7 @@
 
         public $name, $price, $wifi, $pool, $bar, $spa, $buffet, $smoking, $parking;
 
-        function __construct($n0, $n1, $n2, $n3, $n4, $n5, $n6, $n7, $n8) {
+        public function __construct($n0, $n1, $n2, $n3, $n4, $n5, $n6, $n7, $n8) {
             $this->name = $n0;
             $this->price = $n1;
             $this->wifi = $n2;
@@ -15,6 +15,12 @@
             $this->smoking = $n7;
             $this->parking = $n8;
 
+        }
+
+        public function display_data() {
+            echo $this->name;
+            echo $this->price;
+            echo $this->pool;
         }
         
             
