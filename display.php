@@ -38,14 +38,10 @@ if ($_POST['hotel1']) {
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
     echo $diff. " nights. <br> The total cost will be " . "R"; echo $Yotel->price*$diff;
     echo "<br>Facilities Include:<br>";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-
+    echo "Wifi<br>";
+    echo "Bar<br>";
+    echo "Buffet<br>";
+    echo "Free Parking<br>";
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\">";
@@ -73,13 +69,11 @@ if ($_POST['hotel2']) {
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
     echo $diff. " nights. <br> The total cost will be " . "R"; echo $Ibis->price*$diff;
     echo " <br>Facilities Include:<br>";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
+    echo "Wifi<br>";
+    echo "Pool<br>";
+    echo "Bar<br>";
+    echo "Buffet<br>";
+    echo "Free Parking<br>";
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\" >";
@@ -107,13 +101,12 @@ if ($_POST['hotel3']) {
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
     echo $diff. " nights. <br> The total cost will be " . "R"; echo $Indigo->price*$diff;
     echo " <br>Facilities Include:<br>";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
+    echo "Wifi<br>";
+    echo "Pool<br>";
+    echo "Bar<br>";
+    echo "Spa<br>";
+    echo "Buffet<br>";
+    echo "Free Parking<br>";
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\" >";
@@ -140,13 +133,9 @@ if ($_POST['hotel4']) {
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
     echo $diff. " nights. <br> The total cost will be " . "R"; echo $Sandman->price*$diff;
     echo " <br>Facilities Include:<br>";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
+    echo "Wifi<br>";
+    echo "Bar<br>";
+    echo "Smoking Friendly<br>";
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\" >";
@@ -173,13 +162,8 @@ if ($_POST['hotel5']) {
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
     echo $diff. " nights. <br> The total cost will be " . "R"; echo $Sleeperz->price*$diff;
     echo " <br>Facilities Include:<br>";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
+    echo "Bar<br>";
+    echo "Smoking Friendly<br>";
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\" >";
@@ -206,13 +190,9 @@ if ($_POST['hotel6']) {
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
     echo $diff. " nights. <br> The total cost will be " . "R"; echo $Motel->price*$diff;
     echo " <br>Facilities Include:<br>";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
+    echo "Bar<br>";
+    echo "Buffet<br>";
+    echo "Free Parking<br>";
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\" >";
@@ -239,13 +219,12 @@ if ($_POST['hotel7']) {
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
     echo $diff. " nights. <br> The total cost will be " . "R"; echo $Radisson->price*$diff;
     echo " <br>Facilities Include:<br>";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
+    echo "Wifi<br>";
+    echo "Pool<br>";
+    echo "Bar<br>";
+    echo "Spa<br>";
+    echo "Buffet<br>";
+    echo "Parking<br>";
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\" >";
@@ -272,13 +251,10 @@ if ($_POST['hotel8']) {
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
     echo $diff. " nights. <br> The total cost will be " . "R"; echo $Residence->price*$diff;
     echo " <br>Facilities Include:<br>";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
+    echo "Wifi<br>";
+    echo "Bar<br>";
+    echo "Spa<br>";
+    echo "Buffet<br>";
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\" >";
@@ -305,13 +281,11 @@ if ($_POST['hotel9']) {
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
     echo $diff. " nights. <br> The total cost will be " . "R"; echo $Hampton->price*$diff;
     echo " <br>Facilities Include:<br>";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
+    echo "Wifi<br>";
+    echo "Bar<br>";
+    echo "Spa<br>";
+    echo "Buffet<br>";
+    echo "Free Parking<br>";
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\" >";
@@ -338,13 +312,11 @@ if ($_POST['hotel10']) {
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
     echo $diff. " nights. <br> The total cost will be " . "R"; echo $Alexandra->price*$diff;
     echo " <br>Facilities Include:<br>";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
-    echo "";
+    echo "Wifi<br>";
+    echo "Bar<br>";
+    echo "Spa<br>";
+    echo "Buffet<br>";
+    echo "Free Parking<br>";
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\" >";
