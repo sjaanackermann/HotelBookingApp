@@ -25,12 +25,14 @@ require "incl/HotelInfo.php";
     <div class="column">
             <!-- PHP scripts that takes the information from the index page and displays it on this one -->
             <?php 
+echo "<h2>Greetings ". $_POST['name']." ".$_POST['surname']; "</h2>";
+echo "<h3>Please see the details of the Hotels you selected below:</h3>";
+
+
 if ($_POST['hotel1']) {
    echo "<div class=\"column\">";
     echo "<div class=\"box\" id=\"move\">";
-     echo "Greetings " .$_POST['name']; 
-     echo " ". $_POST['surname']; 
-     echo "! <br> You are viewing the ";
+     echo "You are viewing the ";
      echo $Yotel->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
@@ -59,9 +61,7 @@ if ($_POST['hotel1']) {
 if ($_POST['hotel2']) {
     echo "<div class=\"column\">";
     echo "<div class=\"box\" id=\"move\">";
-     echo "Greetings " .$_POST['name']; 
-     echo " ". $_POST['surname']; 
-     echo "! <br> You are viewing the ";
+     echo "You are viewing the ";
      echo $Ibis->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
@@ -91,9 +91,7 @@ if ($_POST['hotel2']) {
 if ($_POST['hotel3']) {
     echo "<div class=\"column\">";
     echo "<div class=\"box\" id=\"move\">";
-     echo "Greetings " .$_POST['name']; 
-     echo " ". $_POST['surname']; 
-     echo "! <br> You are viewing the ";
+     echo "You are viewing the ";
      echo $Indigo->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
@@ -123,9 +121,7 @@ if ($_POST['hotel3']) {
 if ($_POST['hotel4']) {
     echo "<div class=\"column\">";
     echo "<div class=\"box\" id=\"move\">";
-     echo "Greetings " .$_POST['name']; 
-     echo " ". $_POST['surname']; 
-     echo "! <br> You are viewing the ";
+     echo "You are viewing the ";
      echo $Sandman->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
@@ -152,9 +148,7 @@ if ($_POST['hotel4']) {
 if ($_POST['hotel5']) {
     echo "<div class=\"column\">";
     echo "<div class=\"box\" id=\"move\">";
-     echo "Greetings " .$_POST['name']; 
-     echo " ". $_POST['surname']; 
-     echo "! <br> You are viewing the ";
+     echo "You are viewing the ";
      echo $Sleeperz->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
@@ -180,9 +174,7 @@ if ($_POST['hotel5']) {
 if ($_POST['hotel6']) {
     echo "<div class=\"column\">";
     echo "<div class=\"box\" id=\"move\">";
-     echo "Greetings " .$_POST['name']; 
-     echo " ". $_POST['surname']; 
-     echo "! <br> You are viewing the ";
+     echo "You are viewing the ";
      echo $Motel->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
@@ -209,9 +201,7 @@ if ($_POST['hotel6']) {
 if ($_POST['hotel7']) {
     echo "<div class=\"column\">";
     echo "<div class=\"box\" id=\"move\">";
-     echo "Greetings " .$_POST['name']; 
-     echo " ". $_POST['surname']; 
-     echo "! <br> You are viewing the ";
+     echo "You are viewing the ";
      echo $Radisson->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
@@ -241,9 +231,7 @@ if ($_POST['hotel7']) {
 if ($_POST['hotel8']) {
     echo "<div class=\"column\">";
     echo "<div class=\"box\" id=\"move\">";
-     echo "Greetings " .$_POST['name']; 
-     echo " ". $_POST['surname']; 
-     echo "! <br> You are viewing the ";
+     echo "You are viewing the ";
      echo $Residence->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
@@ -271,9 +259,7 @@ if ($_POST['hotel8']) {
 if ($_POST['hotel9']) {
     echo "<div class=\"column\">";
     echo "<div class=\"box\" id=\"move\">";
-     echo "Greetings " .$_POST['name']; 
-     echo " ". $_POST['surname']; 
-     echo "! <br> You are viewing the ";
+     echo "You are viewing the ";
      echo $Hampton->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
@@ -302,9 +288,7 @@ if ($_POST['hotel9']) {
 if ($_POST['hotel10']) {
     echo "<div class=\"column\">";
     echo "<div class=\"box\" id=\"move\">";
-     echo "Greetings " .$_POST['name']; 
-     echo " ". $_POST['surname']; 
-     echo "! <br> You are viewing the ";
+     echo "You are viewing the ";
      echo $Alexandra ->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];

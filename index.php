@@ -96,7 +96,7 @@ require_once "incl/HotelInfo.php";
     </div>
     <!-- Div that contains hotel choices -->
     <div class="field">
-        <label class="label">Please select the two Hotels that you would like to compare below:</label>
+        <label class="label">Please select the Hotels that you would like to compare below:</label>
         <p class="control">
             <input type="checkbox" name="hotel1" value="Yotel Hotel" id="info1"><img id="images" src="images/yotelMain.jpg" alt="Yotel Hotel" width="260px">
             <h3>Yotel Hotel</h3>
