@@ -26,13 +26,13 @@ if ($_POST['hotel1']) {
     echo "<div class=\"box\" id=\"move\">";
      echo "Greetings " .$_POST['name']; 
      echo " ". $_POST['surname']; 
-     echo " You are booking the ";
+     echo " You are viewing the ";
      echo $Yotel->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
     // Formula to convert the dates into days   
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
-    echo $diff. " nights. It will cost " . "R"; echo $Yotel->price*$diff;
+    echo $diff. " nights. The total cost will be " . "R"; echo $Yotel->price*$diff;
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\">";
@@ -52,13 +52,13 @@ if ($_POST['hotel2']) {
     echo "<div class=\"box\" id=\"move\">";
      echo "Greetings " .$_POST['name']; 
      echo " ". $_POST['surname']; 
-     echo " You are booking the ";
+     echo " You are viewing the ";
      echo $Ibis->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
     // Formula to convert the dates into days   
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
-    echo $diff. " nights. It will cost " . "R"; echo $Ibis->price*$diff;
+    echo $diff. " nights. The total cost will be " . "R"; echo $Ibis->price*$diff;
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\" >";
@@ -78,13 +78,13 @@ if ($_POST['hotel3']) {
     echo "<div class=\"box\" id=\"move\">";
      echo "Greetings " .$_POST['name']; 
      echo " ". $_POST['surname']; 
-     echo " You are booking the ";
+     echo " You are viewing the ";
      echo $Indigo->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
     // Formula to convert the dates into days   
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
-    echo $diff. " nights. It will cost " . "R"; echo $Indigo->price*$diff;
+    echo $diff. " nights. The total cost will be " . "R"; echo $Indigo->price*$diff;
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\" >";
@@ -103,13 +103,13 @@ if ($_POST['hotel4']) {
     echo "<div class=\"box\" id=\"move\">";
      echo "Greetings " .$_POST['name']; 
      echo " ". $_POST['surname']; 
-     echo " You are booking the ";
+     echo " You are viewing the ";
      echo $Sandman->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
     // Formula to convert the dates into days   
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
-    echo $diff. " nights. It will cost " . "R"; echo $Sandman->price*$diff;
+    echo $diff. " nights. The total cost will be " . "R"; echo $Sandman->price*$diff;
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\" >";
@@ -128,13 +128,13 @@ if ($_POST['hotel5']) {
     echo "<div class=\"box\" id=\"move\">";
      echo "Greetings " .$_POST['name']; 
      echo " ". $_POST['surname']; 
-     echo " You are booking the ";
+     echo " You are viewing the ";
      echo $Sleeperz->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
     // Formula to convert the dates into days   
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
-    echo $diff. " nights. It will cost " . "R"; echo $Sleeperz->price*$diff;
+    echo $diff. " nights. The total cost will be " . "R"; echo $Sleeperz->price*$diff;
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\" >";
@@ -153,13 +153,13 @@ if ($_POST['hotel6']) {
     echo "<div class=\"box\" id=\"move\">";
      echo "Greetings " .$_POST['name']; 
      echo " ". $_POST['surname']; 
-     echo " You are booking the ";
+     echo " You are viewing the ";
      echo $Motel->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
     // Formula to convert the dates into days   
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
-    echo $diff. " nights. It will cost " . "R"; echo $Motel->price*$diff;
+    echo $diff. " nights. The total cost will be " . "R"; echo $Motel->price*$diff;
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\" >";
@@ -178,13 +178,13 @@ if ($_POST['hotel7']) {
     echo "<div class=\"box\" id=\"move\">";
      echo "Greetings " .$_POST['name']; 
      echo " ". $_POST['surname']; 
-     echo " You are booking the ";
+     echo " You are viewing the ";
      echo $Radisson->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
     // Formula to convert the dates into days   
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
-    echo $diff. " nights. It will cost " . "R"; echo $Radisson->price*$diff;
+    echo $diff. " nights. The total cost will be " . "R"; echo $Radisson->price*$diff;
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\" >";
@@ -203,13 +203,13 @@ if ($_POST['hotel8']) {
     echo "<div class=\"box\" id=\"move\">";
      echo "Greetings " .$_POST['name']; 
      echo " ". $_POST['surname']; 
-     echo " You are booking the ";
+     echo " You are viewing the ";
      echo $Residence->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
     // Formula to convert the dates into days   
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
-    echo $diff. " nights. It will cost " . "R"; echo $Residence->price*$diff;
+    echo $diff. " nights. The total cost will be " . "R"; echo $Residence->price*$diff;
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\" >";
@@ -228,13 +228,13 @@ if ($_POST['hotel9']) {
     echo "<div class=\"box\" id=\"move\">";
      echo "Greetings " .$_POST['name']; 
      echo " ". $_POST['surname']; 
-     echo " You are booking the ";
+     echo " You are viewing the ";
      echo $Hampton->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
     // Formula to convert the dates into days   
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
-    echo $diff. " nights. It will cost " . "R"; echo $Hampton->price*$diff;
+    echo $diff. " nights. The total cost will be " . "R"; echo $Hampton->price*$diff;
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\" >";
@@ -253,13 +253,13 @@ if ($_POST['hotel10']) {
     echo "<div class=\"box\" id=\"move\">";
      echo "Greetings " .$_POST['name']; 
      echo " ". $_POST['surname']; 
-     echo " You are booking the ";
+     echo " You are viewing the ";
      echo $Alexandra ->name. " Hotel for ";
      $date1 = $_POST['in'];  
      $date2 = $_POST['out'];
     // Formula to convert the dates into days   
     $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
-    echo $diff. " nights. It will cost " . "R"; echo $Alexandra->price*$diff;
+    echo $diff. " nights. The total cost will be " . "R"; echo $Alexandra->price*$diff;
    //Div that contains buttons to confirm booking or cancel them 
     echo "<div class=\"control\" >";
         echo "<form action=\"finish.php\" >";
