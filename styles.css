@@ -35,7 +35,9 @@ body {
 /*Form Styling*/
 .box {
     width: 50%;
-    margin-left:25%;
+	margin-left:25%;
+	background-color: rgb(81, 81, 112);
+	color: white;
 }
 
 .title {
@@ -75,6 +77,11 @@ h3 {
 	font-family: 'san-serif';
 }
 
+#text {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
 
 /*Footer Styling*/
 
@@ -197,9 +204,10 @@ h3 {
 }
 
 /*display.php*/
-.display {
-	background-color: aliceblue;
+.labeled {
+	color: white;
 }
+
 
 .greetings {
 	text-align: center;
