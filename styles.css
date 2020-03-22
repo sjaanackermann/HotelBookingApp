@@ -1,5 +1,5 @@
 body {
-	font-family: 'Gothic A1';
+	font-family: 'san-serif';
 	
 }
 
@@ -30,18 +30,18 @@ body {
 }
 
 
+
+
 /*Form Styling*/
 .box {
     width: 50%;
-	margin-left:25%;
-	color: white;
-	
+    margin-left:25%;
 }
 
 .title {
 	text-align: center;
-	color: #e6e9e9;
-	font-family: 'Gothic A1';
+	color: #f6f6f6;
+	font-family: 'Trade Winds';
 }
 
 .button {
@@ -68,7 +68,11 @@ body {
 
 #images {
 	align-content: center;
-	padding-left: 20px;
+	border: rgb(66, 82, 231) 10px solid;
+}
+
+h3 {
+	font-family: 'san-serif';
 }
 
 
@@ -193,4 +197,11 @@ body {
 }
 
 /*display.php*/
+.display {
+	background-color: aliceblue;
+}
+
+.greetings {
+	text-align: center;
+}
 
