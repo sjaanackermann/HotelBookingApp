@@ -1,5 +1,6 @@
 body {
-	font-family: 'Balthazar';
+	font-family: 'Gothic A1';
+	
 }
 
 /*Jumbotron Styling*/
@@ -35,13 +36,15 @@ body {
 
 .title {
 	text-align: center;
-	color: white;
-	font-family: 'Balthazar';
+	color: #000000;
+	font-family: 'Gothic A1';
 }
 
 .button {
     margin-left:40%;
-    margin-top: 1%;
+	margin-top: 1%;
+	background-color: #31BDE6;
+	color: #fff;
 }
 
 #cancel {
@@ -184,3 +187,13 @@ body {
     font-size: 24px;
     padding-left: 15px;	
 }
+
+/*display.php*/
+.display {
+	background-color: aliceblue;
+}
+
+.greetings {
+	text-align: center;
+}
+
