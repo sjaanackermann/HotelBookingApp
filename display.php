@@ -51,14 +51,14 @@ require "incl/HotelInfo.php";
         <div class="column">
             <!-- PHP scripts that takes the information from the index page and displays it on this one -->
             <?php
-            echo "<h2>Greetings " . $_POST['name'] . " " . $_POST['surname'];
+            echo "<h2 id=\"text\">Greetings " . $_POST['name'] . " " . $_POST['surname'];
             "</h2>";
-            echo "<h3>Please see the details of the Hotels you selected below:</h3>";
+            echo "<h3 id=\"text\">Please see the details of the Hotels you selected below:</h3>";
 
 
             echo "<div class=\"control\" >";
             echo "<form action=\"finish.php\" method=\"post\">";
-            if ($_POST['hotel1']) {
+            if($_POST['hotel1']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
                 echo "You are viewing the ";
@@ -78,14 +78,14 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel1\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel1\" class=\"label\">Select this hotel</label>";
+                echo "<label for=\"hotel1\" class=\"labeled\">Select this hotel</label>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 //End of Div 
             }
 
-            if ($_POST['hotel2']) {
+            if($_POST['hotel2']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
                 echo "You are viewing the ";
@@ -106,14 +106,14 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel2\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel2\" class=\"label\">Select this hotel</label>";
+                echo "<label for=\"hotel2\" class=\"labeled\">Select this hotel</label>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 //End of Div 
             }
 
-            if ($_POST['hotel3']) {
+            if($_POST['hotel3']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
                 echo "You are viewing the ";
@@ -135,13 +135,13 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel3\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel3\" class=\"label\">Select this hotel</label>";
+                echo "<label for=\"hotel3\" class=\"labeled\">Select this hotel</label>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 //End of Div 
             }
-            if ($_POST['hotel4']) {
+            if($_POST['hotel4']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
                 echo "You are viewing the ";
@@ -160,13 +160,13 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel4\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel4\" class=\"label\">Select this hotel</label>";
+                echo "<label for=\"hotel4\" class=\"labeled\">Select this hotel</label>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 //End of Div 
             }
-            if ($_POST['hotel5']) {
+            if($_POST['hotel5']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
                 echo "You are viewing the ";
@@ -184,13 +184,13 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel5\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel5\" class=\"label\">Select this hotel</label>";
+                echo "<label for=\"hotel5\" class=\"labeled\">Select this hotel</label>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 //End of Div 
             }
-            if ($_POST['hotel6']) {
+            if($_POST['hotel6']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
                 echo "You are viewing the ";
@@ -209,13 +209,13 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel6\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel6\" class=\"label\">Select this hotel</label>";
+                echo "<label for=\"hotel6\" class=\"labeled\">Select this hotel</label>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 //End of Div 
             }
-            if ($_POST['hotel7']) {
+            if($_POST['hotel7']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
                 echo "You are viewing the ";
@@ -237,13 +237,13 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel7\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel7\" class=\"label\">Select this hotel</label>";
+                echo "<label for=\"hotel7\" class=\"labeled\">Select this hotel</label>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 //End of Div 
             }
-            if ($_POST['hotel8']) {
+            if($_POST['hotel8']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
                 echo "You are viewing the ";
@@ -263,13 +263,13 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel8\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel8\" class=\"label\">Select this hotel</label>";
+                echo "<label for=\"hotel8\" class=\"labeled\">Select this hotel</label>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 //End of Div 
             }
-            if ($_POST['hotel9']) {
+            if($_POST['hotel9']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
                 echo "You are viewing the ";
@@ -290,7 +290,7 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel9\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel9\" class=\"label\">Select this hotel</label>";
+                echo "<label for=\"hotel9\" class=\"labeled\">Select this hotel</label>";
                 echo "</div>";
                 echo "<div class=\"control\" id=\"cancel\">";
                 echo "<a href =\"index.php\"> <button class=\"button\">Cancel</button></a>";
@@ -299,7 +299,7 @@ require "incl/HotelInfo.php";
                 echo "</div>";
                 //End of Div 
             }
-            if ($_POST['hotel10']) {
+            if($_POST['hotel10']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
                 echo "You are viewing the ";
@@ -320,7 +320,7 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel10\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel10\" class=\"label\">Select this hotel</label>";
+                echo "<label for=\"hotel10\" class=\"labeled\">Select this hotel</label>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
