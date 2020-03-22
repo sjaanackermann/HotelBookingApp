@@ -66,12 +66,12 @@ require_once "incl/HotelInfo.php";
             <div class="container">
                 <div class="columns">
                     <div class="column">
-                        <div class="box">
+                        <div class="box bg-dark">
                             <!-- Start of form for booking a hotel -->
                             <form action="display.php" method="post" class="form">
                                 <!-- Div that contains the name input -->
                                 <div class="field">
-                                    <label class="label">Name:</label>
+                                    <label class="labels">Name:</label>
                                     <p class="control">
                                         <input class="input" type="text" name="name" placeholder="Please enter your name" required>
                                     </p>
@@ -80,7 +80,7 @@ require_once "incl/HotelInfo.php";
 
                                 <!-- Div that contains the surname input -->
                                 <div class="field">
-                                    <label class="label">Surname:</label>
+                                    <label class="labels">Surname:</label>
                                     <p class="control">
                                         <input class="input" type="text" name="surname" placeholder="Please enter your surname" required>
                                     </p>
@@ -89,7 +89,7 @@ require_once "incl/HotelInfo.php";
 
                                 <!-- Div that contains the email input -->
                                 <div class="field">
-                                    <label class="label">Email:</label>
+                                    <label class="labels">Email:</label>
                                     <p class="control">
                                         <input class="input" type="email" name="email" placeholder="Please enter your email address" required>
                                     </p>
@@ -98,14 +98,14 @@ require_once "incl/HotelInfo.php";
 
                                 <!-- Div that contains check out date -->
                                 <div class="field">
-                                    <label class="label">Check-In:</label>
+                                    <label class="labels">Check-In:</label>
                                     <input class="input" name="in" type="date" required>
                                 </div>
                                 <!-- End of Div -->
 
                                 <!-- Div that contains check out date -->
                                 <div class="field">
-                                    <label class="label">Check-Out:</label>
+                                    <label class="labels">Check-Out:</label>
                                     <input class="input" name="out" type="date" required>
                                 </div>
                                 <!-- End of Div -->

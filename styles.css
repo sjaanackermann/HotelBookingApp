@@ -25,18 +25,22 @@ body {
     font-size: 40px;
 }
 
-
+.labels {
+	color: white;
+}
 
 
 /*Form Styling*/
 .box {
     width: 50%;
-    margin-left:25%;
+	margin-left:25%;
+	color: white;
+	
 }
 
 .title {
 	text-align: center;
-	color: white;
+	color: #e6e9e9;
 	font-family: 'Gothic A1';
 }
 
@@ -187,3 +191,6 @@ body {
     font-size: 24px;
     padding-left: 15px;	
 }
+
+/*display.php*/
+

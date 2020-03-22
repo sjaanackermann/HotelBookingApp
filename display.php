@@ -37,7 +37,7 @@ echo "<h2>Greetings ". $_POST['name']." ".$_POST['surname']; "</h2>";
 echo "<h3>Please see the details of the Hotels you selected below:</h3>";
 
 
-if ($_POST['hotel1']) {
+if ($_POST['Hotel1']) {
    echo "<div class=\"column\">";
     echo "<div class=\"box\" id=\"move\">";
      echo "You are viewing the ";
