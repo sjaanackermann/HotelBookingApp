@@ -15,6 +15,7 @@ require_once "incl/HotelInfo.php";
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--google fonts-->
     <link href='https://fonts.googleapis.com/css?family=Balthazar' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Gothic A1' rel='stylesheet'>
 
     <title>Hotel_Booking_App</title>
   </head>
@@ -42,7 +43,7 @@ require_once "incl/HotelInfo.php";
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap" rel="stylesheet">
-
+	<link href='https://fonts.googleapis.com/css?family=Gothic A1' rel='stylesheet'>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
@@ -61,7 +62,7 @@ require_once "incl/HotelInfo.php";
 
     <div class="jumbotron jumbotron-fluid">
         <section class="section">
-            <h2 class="title">Welcome to My Scotland Bookings!</h2>
+            <h2 class="title">Welcome To Scotland Bookings!</h2>
             <div class="container">
                 <div class="columns">
                     <div class="column">
@@ -111,6 +112,7 @@ require_once "incl/HotelInfo.php";
         </section>
     </div>
     <!-- Div that contains hotel choices -->
+	<div class="container">
     <div class="field">
         <label class="label">Please select the Hotels that you would like to compare below:</label>
         <p class="control">
@@ -198,6 +200,7 @@ require_once "incl/HotelInfo.php";
             <hr>
         </p>
     </div>
+	</div>
     <!-- End of Div -->
 
     <!-- Contains buttons to submit and cancel the form -->
