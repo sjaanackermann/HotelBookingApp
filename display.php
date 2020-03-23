@@ -75,6 +75,8 @@ require "incl/HotelInfo.php";
             echo "<div class=\"control\" >";
             echo "<form action=\"finish.php\" method=\"post\">";
             
+            //Yotel Hotel 
+
             if ($_POST['hotel1']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
@@ -102,6 +104,8 @@ require "incl/HotelInfo.php";
                 echo "</div>";
                 //End of Div 
             }
+
+            //Ibis Hotel
 
             if ($_POST['hotel2']) {
                 echo "<div class=\"column\">";
@@ -132,6 +136,8 @@ require "incl/HotelInfo.php";
                 //End of Div 
             }
 
+            //Hotel Indigo
+
             if ($_POST['hotel3']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
@@ -161,6 +167,9 @@ require "incl/HotelInfo.php";
                 echo "</div>";
                 //End of Div 
             }
+
+            //Sandman Hotel
+
             if ($_POST['hotel4']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
@@ -187,6 +196,9 @@ require "incl/HotelInfo.php";
                 echo "</div>";
                 //End of Div 
             }
+
+            //Sleeperz Hotel
+
             if ($_POST['hotel5']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
@@ -212,6 +224,9 @@ require "incl/HotelInfo.php";
                 echo "</div>";
                 //End of Div 
             }
+
+            //Motel One Hotel
+
             if ($_POST['hotel6']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
@@ -238,6 +253,9 @@ require "incl/HotelInfo.php";
                 echo "</div>";
                 //End of Div 
             }
+
+            //Radisson Hotel
+
             if ($_POST['hotel7']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
@@ -267,6 +285,9 @@ require "incl/HotelInfo.php";
                 echo "</div>";
                 //End of Div 
             }
+
+            //Residence Inn Hotel
+
             if ($_POST['hotel8']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
@@ -294,6 +315,9 @@ require "incl/HotelInfo.php";
                 echo "</div>";
                 //End of Div 
             }
+
+            //Hampton Hotel
+
             if ($_POST['hotel9']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
@@ -322,6 +346,9 @@ require "incl/HotelInfo.php";
                 echo "</div>";
                 //End of Div 
             }
+
+            //Alexandra Hotel
+
             if ($_POST['hotel10']) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"box\" id=\"move\">";
@@ -350,7 +377,8 @@ require "incl/HotelInfo.php";
                 echo "</div>";
                 //End of Div 
             }
-
+            
+            //Book & Cancel Buttons
             echo "<button class=\"button\">Book</button>";
             echo "</form>";
             echo "<div class=\"control\" id=\"cancel\">";
