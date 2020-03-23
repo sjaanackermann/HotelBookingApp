@@ -490,15 +490,16 @@ require "incl/HotelInfo.php";
 
                 <div class="footer-bottom">
                     <div class="container">
-                        <p class="pull-left"> Copyright © 2020. All rights reserved. </p>
+                        <p> Copyright © 2020. All rights reserved. </p>
 
-                        <ul class="nav nav-pills payments">
+                        <p><ul class="nav nav-pills payments">
                             <li>We Accept: </li>
                             <li><i class="fa fa-cc-paypal"></i></li>
                             <li><i class="fa fa-cc-mastercard"></i></li>
                             <li><i class="fa fa-cc-amex"></i></li>
                             <li><i class="fa fa-cc-visa"></i></li>
                         </ul>
+                        </p>
 
                     </div>
                 </div>

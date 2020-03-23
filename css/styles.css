@@ -206,6 +206,10 @@ h3 {
 	padding-bottom: 40px;
     color:#fff;
 }
+
+.container {
+	text-align: center;
+}
 .footer-bottom p.pull-left {
 	padding-top: 6px;
 }
@@ -214,6 +218,7 @@ h3 {
     font-size: 24px;
     padding-left: 15px;	
 }
+
 
 /*display.php*/
 .labeled {
@@ -224,9 +229,4 @@ h3 {
 
 .greetings {
 	text-align: center;
-}
-
-
-.error {
-	color: rgb(163, 39, 39) !important;
 }

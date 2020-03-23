@@ -277,16 +277,19 @@ require_once "incl/HotelInfo.php";
         </div>
 
         <div class="footer-bottom">
-            <div class="container">
-                <p class="pull-left"> Copyright © 2020. All rights reserved. </p>
-                <div class="pull-right">
-                    <ul class="nav nav-pills payments">
-                        <li>We Accept: </li>
-                        <li><i class="fa fa-cc-paypal"></i></li>
-                        <li><i class="fa fa-cc-mastercard"></i></li>
-                        <li><i class="fa fa-cc-amex"></i></li>
-                        <li><i class="fa fa-cc-visa"></i></li>
-                    </ul>
+                    <div class="container">
+                        <p> Copyright © 2020. All rights reserved. </p>
+
+                        <p><ul class="nav nav-pills payments">
+                            <li>We Accept: </li>
+                            <li><i class="fa fa-cc-paypal"></i></li>
+                            <li><i class="fa fa-cc-mastercard"></i></li>
+                            <li><i class="fa fa-cc-amex"></i></li>
+                            <li><i class="fa fa-cc-visa"></i></li>
+                        </ul>
+                        </p>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -300,29 +303,6 @@ require_once "incl/HotelInfo.php";
     new WOW().init();
 </script>
 <!-- Optional JavaScript -->
-<!-- <script type="text/javascript">
-    function checkCheckin() {
-        var dateString = document.getElementById('id_in').value;
-        var myDate = new Date(dateString);
-        var today = new Date();
-        if ( myDate < today ) { 
-            $('#id_in').after('<p>Please enter todays date or a date in the future.</p>');
-            return false;
-        }
-        return true;
-    }
-    
-    function checkCheckout() {
-        var dateString = document.getElementById('id_out').value;
-        var myDate = new Date(dateString);
-        var today = new Date();
-        if ( myDate <= today ) { 
-            $('#id_out').after('<p>Please enter a date in the future.</p>');
-            return false;
-        }
-        return true;
-    }
-</script> -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
 
