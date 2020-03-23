@@ -100,6 +100,7 @@ use PHPMailer\PHPMailer\Exception;
                     <b>From :</b> " . $_SESSION['in'] . " to : " . $_SESSION['out'] . "<br>";
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
+         // Client Disply
         $mail->send();
         echo "<div class=\"column\">";
         echo "<div class=\"box\" id=\"move\">";
