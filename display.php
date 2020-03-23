@@ -87,8 +87,10 @@ require "incl/HotelInfo.php";
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
+                if ($diff >= 1){
                 echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
                 echo $Yotel->price * $diff;
+            }else {echo ": ERROR: Please select valid dates, dates must be one night or more!" ;}
                 echo "<br><br><u>Facilities Include:</u><br>";
                 echo "Wifi<br>";
                 echo "Bar<br>";

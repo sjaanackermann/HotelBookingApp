@@ -94,14 +94,14 @@ require_once "incl/HotelInfo.php";
                                 <!-- Div that contains check out date -->
                                 <div class="field">
                                     <label class="labels">Check-In:</label>
-                                    <input class="input" name="in" type="date" required>
+                                    <input class="input" id="in" name="in" type="date" min="today" required>
                                 </div>
                                 <!-- End of Div -->
 
                                 <!-- Div that contains check out date -->
                                 <div class="field">
                                     <label class="labels">Check-Out:</label>
-                                    <input class="input" name="out" type="date" required>
+                                    <input class="input" id="out" name="out" type="date" required>
                                 </div>
                                 <!-- End of Div -->
         </section>
@@ -300,9 +300,32 @@ require_once "incl/HotelInfo.php";
     new WOW().init();
 </script>
 <!-- Optional JavaScript -->
+<!-- <script type="text/javascript">
+    function checkCheckin() {
+        var dateString = document.getElementById('id_in').value;
+        var myDate = new Date(dateString);
+        var today = new Date();
+        if ( myDate < today ) { 
+            $('#id_in').after('<p>Please enter todays date or a date in the future.</p>');
+            return false;
+        }
+        return true;
+    }
+    
+    function checkCheckout() {
+        var dateString = document.getElementById('id_out').value;
+        var myDate = new Date(dateString);
+        var today = new Date();
+        if ( myDate <= today ) { 
+            $('#id_out').after('<p>Please enter a date in the future.</p>');
+            return false;
+        }
+        return true;
+    }
+</script> -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
