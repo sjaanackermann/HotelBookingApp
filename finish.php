@@ -108,6 +108,9 @@ use PHPMailer\PHPMailer\Exception;
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
+    echo "<div class=\"control\" id=\"back\" action=\"index.php\">";
+    echo "<a href =\"index.php\"> <button class=\"button\">Home Page</button></a>";
+    echo "</div>";
     "</div>";
    
 
