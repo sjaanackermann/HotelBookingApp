@@ -26,6 +26,7 @@ use PHPMailer\PHPMailer\Exception;
 
     <!-- My CSS -->
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/final.php_styles.css"
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
