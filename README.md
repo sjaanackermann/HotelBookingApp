@@ -1,7 +1,7 @@
 # HotelBookingApp
 Group Project for a Hotel Booking Application:
 
-Welcome to our Hotel Booking Application! With this you will be able to enter your details as well as select dates of stay and your choice of Hotel. The application will also tell you what the total cost of your stay will be and giv eyou the option to compare your selections against each other. Once you have selected the Hotel of your choice, an email will be sent to the booking manager with your details and dates.
+Welcome to our Hotel Booking Application! With this you will be able to enter your details as well as select dates of stay and your choice of Hotel. The application will also tell you what the total cost of your stay will be and give you the option to compare your selections against each other. Once you have selected the Hotel of your choice, an email will be sent to the booking manager with your details and dates.
 
 ## Getting Started
 
@@ -9,7 +9,7 @@ Download the project files from github onto your local machine.
 
 ### Prerequisites
 
-The only prerequisite for running the quiz is that you have access to a local host server.
+The only prerequisite for running the Hotel Booking App is that you have access to a local host server.
 
 ```
 You can use any of the follwoing free programs to set up a local host:
@@ -38,11 +38,12 @@ Select the Hotel-Booking-Application and the quiz will automatically start in th
 * PHP
 * Bootstrap4
 * Javascript
+* Bulma
 
 ## Authors
 
-* **Zachary Williams** 
 * **Sjaan Ackermann** 
+* **Zachary Williams** 
 * **Jolene Thebus** 
 
 
