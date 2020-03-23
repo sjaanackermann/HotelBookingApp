@@ -119,8 +119,10 @@ require "incl/HotelInfo.php";
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
-                echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
-                echo $Ibis->price * $diff;
+                if ($diff >= 1){
+                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $Ibis->price * $diff;
+                }else {echo ": ERROR: Please select valid dates, dates must be one night or more!" ;}
                 echo " <br><br><u>Facilities Include:</u><br>";
                 echo "Wifi<br>";
                 echo "Pool<br>";
@@ -150,8 +152,10 @@ require "incl/HotelInfo.php";
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
-                echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
-                echo $Indigo->price * $diff;
+                if ($diff >= 1){
+                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $Indigo->price * $diff;
+                }else {echo ": ERROR: Please select valid dates, dates must be one night or more!" ;}
                 echo " <br><br><u>Facilities Include:</u><br>";
                 echo "Wifi<br>";
                 echo "Pool<br>";
@@ -182,8 +186,10 @@ require "incl/HotelInfo.php";
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
-                echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
-                echo $Sandman->price * $diff;
+                if ($diff >= 1){
+                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $Sandman->price * $diff;
+                }else {echo ": ERROR: Please select valid dates, dates must be one night or more!" ;}
                 echo " <br><br><u>Facilities Include:</u><br>";
                 echo "Wifi<br>";
                 echo "Bar<br>";
@@ -211,8 +217,10 @@ require "incl/HotelInfo.php";
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
-                echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
-                echo $Sleeperz->price * $diff;
+                if ($diff >= 1){
+                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $Sleeperz->price * $diff;
+                }else {echo ": ERROR: Please select valid dates, dates must be one night or more!" ;}
                 echo " <br><br><u>Facilities Include:</u><br>";
                 echo "Bar<br>";
                 echo "Smoking Friendly<br><br>";
@@ -239,8 +247,10 @@ require "incl/HotelInfo.php";
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
-                echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
-                echo $Motel->price * $diff;
+                if ($diff >= 1){
+                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $Motel->price * $diff;
+                }else {echo ": ERROR: Please select valid dates, dates must be one night or more!" ;}
                 echo " <br><br><u>Facilities Include:</u><br>";
                 echo "Bar<br>";
                 echo "Buffet<br>";
@@ -268,8 +278,10 @@ require "incl/HotelInfo.php";
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
-                echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
-                echo $Radisson->price * $diff;
+                if ($diff >= 1){
+                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $Radisson->price * $diff;
+                }else {echo ": ERROR: Please select valid dates, dates must be one night or more!" ;}
                 echo " <br><br><u>Facilities Include:</u><br>";
                 echo "Wifi<br>";
                 echo "Pool<br>";
@@ -300,8 +312,10 @@ require "incl/HotelInfo.php";
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
-                echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
-                echo $Residence->price * $diff;
+                if ($diff >= 1){
+                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $Residence->price * $diff;
+                }else {echo ": ERROR: Please select valid dates, dates must be one night or more!" ;}
                 echo " <br><br><u>Facilities Include:</u><br>";
                 echo "Wifi<br>";
                 echo "Bar<br>";
@@ -330,8 +344,10 @@ require "incl/HotelInfo.php";
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
-                echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
-                echo $Hampton->price * $diff;
+                if ($diff >= 1){
+                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $Hampton->price * $diff;
+                }else {echo ": ERROR: Please select valid dates, dates must be one night or more!" ;}
                 echo " <br><br><u>Facilities Include:</u><br>";
                 echo "Wifi<br>";
                 echo "Bar<br>";
@@ -361,8 +377,10 @@ require "incl/HotelInfo.php";
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
-                echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
-                echo $Alexandra->price * $diff;
+                if ($diff >= 1){
+                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $Alexandra->price * $diff;
+                }else {echo ": ERROR: Please select valid dates, dates must be one night or more!" ;}
                 echo " <br><br><u><u>Facilities Include:</u></u><br>";
                 echo "Wifi<br>";
                 echo "Bar<br>";
