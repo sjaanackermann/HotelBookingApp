@@ -58,8 +58,11 @@ body {
 	color: #fff;
 }
 
-#cancel {
-    margin-left:1.5%;
+.cancel {
+	margin-left: 40%;
+    margin-top: 1%;
+    background-color: #31BDE6;
+    color: #fff;
 }
 
 #move {
