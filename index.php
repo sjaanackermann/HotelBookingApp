@@ -277,7 +277,7 @@ require_once "incl/HotelInfo.php";
         </div>
 
         <div class="footer-bottom">
-                    <div class="container">
+                    <div class="containers">
                         <p> Copyright © 2020. All rights reserved. </p>
 
                         <p><ul class="nav nav-pills payments">
