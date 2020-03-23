@@ -1,5 +1,5 @@
 body {
-	font-family: 'Gothic A1';
+	font-family: 'san-serif';
 	
 }
 
@@ -11,33 +11,44 @@ body {
 
 }
 
-.jumboh {
+.heading {
     color: whitesmoke;
     text-align: center;
     font-family: 'Crimson Text', serif;
-    font-size: 70px;
+    font-size: 50px;
 }
 
-.jumbop {
+.headingp {
     color: whitesmoke;
     text-align: center;
     font-family: 'Crimson Text', serif;
-    font-size: 40px;
+    font-size: 30px;
+}
+
+.labels {
+	color: white;
 }
 
 
 
 
 /*Form Styling*/
+.label {
+	font-size: 30px;
+}
+
 .box {
     width: 50%;
-    margin-left:25%;
+	margin-left:25%;
+	background-color: rgb(81, 81, 112);
+	color: white;
+	font-size: 20px;
 }
 
 .title {
 	text-align: center;
-	color: #000000;
-	font-family: 'Gothic A1';
+	color: #f6f6f6;
+	font-family: 'Trade Winds';
 }
 
 .button {
@@ -64,9 +75,25 @@ body {
 
 #images {
 	align-content: center;
-	padding-left: 20px;
+	margin-left: 20px;
+	border: rgb(43, 54, 148) 5px solid;
 }
 
+
+h3 {
+	font-family: 'san-serif';
+}
+
+.text {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}
+.text1 {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
 
 /*Footer Styling*/
 
@@ -78,7 +105,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 	height: auto;
-	padding-bottom: 30px;
+	padding-bottom: 15px;
 	position: relative;
 	width: 100%;
     color:#fff;
@@ -189,11 +216,14 @@ body {
 }
 
 /*display.php*/
-.display {
-	background-color: aliceblue;
+.labeled {
+	color: white;
+	margin-left: 15px;
 }
+
 
 .greetings {
 	text-align: center;
 }
+
 

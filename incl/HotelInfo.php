@@ -19,5 +19,5 @@ $Residence = new Hotel("Residence Inn", 1000, true, false, true, true, true, fal
 $Hampton = new Hotel("Hampton", 1000, true, false, true, true, true, false, true);
 $Alexandra = new Hotel("Alexandra", 1200, true, false, true, true, true, false, true);
 
-$allHotels = array($Yotel, $Ibis, $Indigo, $Sandman, $Sleeperz, $Motel, $Raddisons, $Residence, $Hampton, $Alexandra);
+$allHotels = array($Yotel, $Ibis, $Indigo, $Sandman, $Sleeperz, $Motel, $Radisson, $Residence, $Hampton, $Alexandra);
 ?>
