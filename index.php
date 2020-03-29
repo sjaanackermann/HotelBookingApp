@@ -134,7 +134,7 @@ require_once "incl/HotelInfo.php";
 
                     <br>
 
-                 <!-- Card 2 -->
+                 <!-- Card 2: Ibis Hotel -->
                  <div class="card" style="width: 18rem;">
                     <img src="images/ibisMain.jpg" class="card-img-top" alt="Ibis Hotel" >
                     <div class="card-body">
@@ -147,32 +147,36 @@ require_once "incl/HotelInfo.php";
                     </ul>
                 </div>
 
-                <!-- Ibis Hotel -->
-                <hr>
-                <input type="checkbox" name="hotel2" value="Ibis Hotel" id="info2"><img id="images" src="images/ibisMain.jpg" alt="Ibis Hotel" width="260px"><br><br>
-                <h3><b>Ibis Hotel</b></h3>
-                <p id="discrip">Set in Glasgow, 1.1 km from Buchanan Galleries, ibis Styles Glasgow Centre West offers air-conditioned rooms and a bar. Among the facilities of this property are a restaurant, a 24-hour front desk and a shared lounge, along with free WiFi. The hotel features family rooms.
-                </p>
-                <?php echo "Daily Rate: R" . $Ibis->price . "" ?>
-                <br>
+                    <br>
 
-                <!-- Hotel Indigo -->
-                <hr>
-                <input type="checkbox" name="hotel3" value="Hotel Indigo" id="info3"><img id="images" src="images/indigoMain.jpg" alt="Hotel Indigo" width="260px"><br><br>
-                <h3><b>Hotel Indigo</b></h3>
-                <p id="discrip">Boasting a bar and free WiFi, Hotel Indigo - Dundee is situated in Dundee, 1 km from Discovery Point. Around 1.4 km from University of Dundee and 2 km from Abertay University, the property is also close to Dundee Central Library. The property is located 400 m from Wellgate Shopping Centre.
-                </p>
-                <?php echo "Daily Rate: R" . $Indigo->price . "" ?>
-                <br>
+                <!-- Card 3: Hotel Indigo  -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/indigoMain.jpg" class="card-img-top" alt="Hotel Indigo" >
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Indigo</h5>
+                        <p class="card-text">Boasting a bar and free WiFi, Hotel Indigo - Dundee is situated in Dundee, 1 km from Discovery Point. Around 1.4 km from University of Dundee and 2 km from Abertay University, the property is also close to Dundee Central Library. The property is located 400 m from Wellgate Shopping Centre.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><?php echo "Daily Rate: R" . $Indigo->price . "" ?></li>
+                        <li class="list-group-item"><input type="checkbox" name="hotel3" value="Hotel Indigo" id="info3" class="selection">Compare this Hotel</li>
+                    </ul>
+                </div>
 
-                <!-- Sandman Hotel -->
-                <hr>
-                <input type="checkbox" name="hotel4" value="Sandman Hotel" id="info4"><img id="images" src="images/sandmanMain.jpg" alt="Sandman Hotel" width="260px"><br><br>
-                <h3><b>Sandman Hotel</b></h3>
-                <p id="discrip">Sandman Signature Aberdeen Hotel can conveniently provide information at the reception to help guests to get around the area.
-                    Popular points of interest near the accommodation include Beach Ballroom, Aberdeen Art Gallery and Bon Accord & St Nicholas. The nearest airport is Aberdeen Airport, 8 km from Sandman Signature Aberdeen Hotel.
-                </p>
-                <?php echo "Daily Rate: R" . $Sandman->price . "" ?>
+                    <br>
+
+                <!-- Card 4: Sandman Hotel -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/sandmanMain.jpg" class="card-img-top" alt="Sandman Hotel" >
+                    <div class="card-body">
+                        <h5 class="card-title">Sandman Hotel</h5>
+                        <p class="card-text">Popular points of interest near the accommodation include Beach Ballroom, Aberdeen Art Gallery and Bon Accord & St Nicholas. The nearest airport is Aberdeen Airport, 8 km from Sandman Signature Aberdeen Hotel.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><?php echo "Daily Rate: R" . $Sandman->price . "" ?></li>
+                        <li class="list-group-item"><input type="checkbox" name="hotel4" value="Sandman Hotel" id="info4" class="selection">Compare this Hotel</li>
+                    </ul>
+                </div>
+                
                 <br>
 
                 <!-- Sleeperz Hotel -->
