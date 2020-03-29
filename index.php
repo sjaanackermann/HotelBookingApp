@@ -37,6 +37,9 @@ require_once "incl/HotelInfo.php";
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" ref="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" type="text/css" media="all">
 
 
     <title>Hotel Booking</title>
@@ -104,6 +107,11 @@ require_once "incl/HotelInfo.php";
                                     <input class="input" id="out" name="out" type="date" required>
                                 </div>
                                 <!-- End of Div -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </div>
     <!-- Div that contains hotel choices -->
@@ -277,21 +285,22 @@ require_once "incl/HotelInfo.php";
         </div>
 
         <div class="footer-bottom">
-                    <div class="containers">
-                        <p> Copyright © 2020. All rights reserved. </p>
+            <div class="containers">
+                <p> Copyright © 2020. All rights reserved. </p>
 
-                        <p><ul class="nav nav-pills payments">
-                            <li>We Accept: </li>
-                            <li><i class="fa fa-cc-paypal"></i></li>
-                            <li><i class="fa fa-cc-mastercard"></i></li>
-                            <li><i class="fa fa-cc-amex"></i></li>
-                            <li><i class="fa fa-cc-visa"></i></li>
-                        </ul>
-                        </p>
+                <p>
+                    <ul class="nav nav-pills payments">
+                        <li>We Accept: </li>
+                        <li><i class="fa fa-cc-paypal"></i></li>
+                        <li><i class="fa fa-cc-mastercard"></i></li>
+                        <li><i class="fa fa-cc-amex"></i></li>
+                        <li><i class="fa fa-cc-visa"></i></li>
+                    </ul>
+                </p>
 
-                    </div>
-                </div>
             </div>
+        </div>
+        </div>
         </div>
     </footer>
 </body>

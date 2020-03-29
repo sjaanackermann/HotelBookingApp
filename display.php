@@ -88,7 +88,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $diff . " nights.  </b><br><br> The Daily Rate is: R" .$Yotel->price. "<br><br> The Total Cost for your stay will be " . "R";
                     echo $Yotel->price * $diff;
                 }
                 elseif ($diff < 1) {
