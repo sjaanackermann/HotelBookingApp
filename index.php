@@ -325,7 +325,7 @@ require_once "incl/HotelInfo.php";
     new WOW().init();
 </script>
 
-<!-- Optional JavaScript -->
+<!-- JavaScript: Hides submit button until you have selected a hotel -->
 <script>
 var checkboxes = $("input[type='checkbox']"),
     submitButt = $("input[type='submit']");

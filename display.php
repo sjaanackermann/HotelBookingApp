@@ -88,10 +88,9 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>.  <br><br> The Daily Rate is: R" .$Yotel->price. "<br><br> The Total Cost for your stay will be " . "R";
+                    echo $diff . " nights</b>.  <br><br> The Daily Rate is: R" . $Yotel->price . "<br><br> The Total Cost for your stay will be " . "R";
                     echo floor($Yotel->price * $diff);
-                }
-                elseif ($diff < 1) {
+                } elseif ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
                 }
                 echo "<br><br><u>Facilities Include:</u><br>";
@@ -123,7 +122,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>. <br><br> The Daily Rate is: R" .$Ibis->price. "<br><br> The Total Cost will be " . "R";
+                    echo $diff . " nights</b>. <br><br> The Daily Rate is: R" . $Ibis->price . "<br><br> The Total Cost will be " . "R";
                     echo floor($Ibis->price * $diff);
                 }
                 if ($diff < 1) {
@@ -159,7 +158,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Indigo->price. "<br><br> The Total Cost will be " . "R";
+                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" . $Indigo->price . "<br><br> The Total Cost will be " . "R";
                     echo floor($Indigo->price * $diff);
                 }
                 if ($diff < 1) {
@@ -196,7 +195,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Sandman->price. "<br><br> The Total Cost will be " . "R";
+                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" . $Sandman->price . "<br><br> The Total Cost will be " . "R";
                     echo floor($Sandman->price * $diff);
                 }
                 if ($diff < 1) {
@@ -230,7 +229,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Sleeperz->price. "<br><br> The Total Cost will be " . "R";
+                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" . $Sleeperz->price . "<br><br> The Total Cost will be " . "R";
                     echo floor($Sleeperz->price * $diff);
                 }
                 if ($diff < 1) {
@@ -263,7 +262,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Motel->price. "<br><br> The Total Cost will be " . "R";
+                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" . $Motel->price . "<br><br> The Total Cost will be " . "R";
                     echo floor($Motel->price * $diff);
                 }
                 if ($diff < 1) {
@@ -297,7 +296,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Radisson->price. "<br><br> The Total Cost will be " . "R";
+                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" . $Radisson->price . "<br><br> The Total Cost will be " . "R";
                     echo floor($Radisson->price * $diff);
                 }
                 if ($diff < 1) {
@@ -334,7 +333,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Residence->price. "<br><br> The Total Cost will be " . "R";
+                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" . $Residence->price . "<br><br> The Total Cost will be " . "R";
                     echo floor($Residence->price * $diff);
                 }
                 if ($diff < 1) {
@@ -369,7 +368,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Hampton->price. "<br><br> The Total Cost will be " . "R";
+                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" . $Hampton->price . "<br><br> The Total Cost will be " . "R";
                     echo floor($Hampton->price * $diff);
                 }
                 if ($diff < 1) {
@@ -405,7 +404,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Alexandra->price. "<br><br> The Total Cost will be " . "R";
+                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" . $Alexandra->price . "<br><br> The Total Cost will be " . "R";
                     echo floor($Alexandra->price * $diff);
                 }
                 if ($diff < 1) {
@@ -429,7 +428,7 @@ require "incl/HotelInfo.php";
             }
 
             //Book & Cancel Buttons
-            echo "<button class=\"button\">Book</button>";
+            echo "<input type=\"submit\">";
             echo "</form>";
             echo "<div class=\"control\" id=\"cancel\" action=\"index.php\">";
             echo "<a href =\"index.php\"> <button class=\"button\">Cancel</button></a>";
@@ -492,18 +491,28 @@ require "incl/HotelInfo.php";
                     <div class="containers">
                         <p> Copyright © 2020. All rights reserved. </p>
 
-                        <p><ul class="nav nav-pills payments">
-                            <li>We Accept: </li>
-                            <li><i class="fa fa-cc-paypal"></i></li>
-                            <li><i class="fa fa-cc-mastercard"></i></li>
-                            <li><i class="fa fa-cc-amex"></i></li>
-                            <li><i class="fa fa-cc-visa"></i></li>
-                        </ul>
+                        <p>
+                            <ul class="nav nav-pills payments">
+                                <li>We Accept: </li>
+                                <li><i class="fa fa-cc-paypal"></i></li>
+                                <li><i class="fa fa-cc-mastercard"></i></li>
+                                <li><i class="fa fa-cc-amex"></i></li>
+                                <li><i class="fa fa-cc-visa"></i></li>
+                            </ul>
                         </p>
 
                     </div>
                 </div>
             </footer>
+
+            <script>
+                var checkboxes = $("input[type='checkbox']"),
+                    submitButt = $("input[type='submit']");
+
+                checkboxes.click(function() {
+                    submitButt.attr("disabled", !checkboxes.is(":checked"));
+                });
+            </script>
 
 </body>
 
