@@ -60,6 +60,13 @@ body {
 	color: #fff;
 }
 
+input[type=submit]{
+	margin-left:40%;
+	margin-top: 1%;
+	background-color: #31BDE6;
+	color: #fff;
+}
+
 .cancel {
 	margin-left: 40%;
     margin-top: 1%;

@@ -428,7 +428,7 @@ require "incl/HotelInfo.php";
             }
 
             //Book & Cancel Buttons
-            echo "<input type=\"submit\">";
+            echo "<input type=\"submit\"disabled>";
             echo "</form>";
             echo "<div class=\"control\" id=\"cancel\" action=\"index.php\">";
             echo "<a href =\"index.php\"> <button class=\"button\">Cancel</button></a>";
