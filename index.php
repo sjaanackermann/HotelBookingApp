@@ -126,6 +126,33 @@ require_once "incl/HotelInfo.php";
                 <?php echo "Daily Rate: R" . $Yotel->price . "" ?>
                 <br>
 
+
+                <!-- Card 1 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/yotelMain.jpg" class="card-img-top" alt="Yotel Hotel">
+                    <div class="card-body">
+                        <h5 class="card-title">Yotel Hotel</h5>
+                        <p class="card-text">Located in Edinburgh and with EICC reachable within 1 km, YOTEL Edinburgh provides express check-in and check-out, rooms, a fitness centre, free WiFi throughout the property and a bar. The property is set 1.9 km from Edinburgh Playhouse, 2 km from Edinburgh Castle and 2 km from National Museum of Scotland.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><?php echo "Daily Rate: R" . $Yotel->price . "" ?></li>
+                        <li class="list-group-item"><input type="checkbox" name="hotel1" value="Yotel Hotel" id="info1" class="selection">Compare this Hotel</li>
+                    </ul>
+                </div>
+
+                 <!-- Card 2 -->
+                 <div class="card" style="width: 18rem;">
+                    <img src="images/ibisMain.jpg" class="card-img-top" alt="Ibis Hotel" >
+                    <div class="card-body">
+                        <h5 class="card-title">Ibis Hotel</h5>
+                        <p class="card-text">Set in Glasgow, 1.1 km from Buchanan Galleries, ibis Styles Glasgow Centre West offers air-conditioned rooms and a bar. Among the facilities of this property are a restaurant, a 24-hour front desk and a shared lounge, along with free WiFi.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><?php echo "Daily Rate: R" . $Ibis->price . "" ?></li>
+                        <li class="list-group-item"><input type="checkbox" name="hotel2" value="Ibis Hotel" id="info2" class="selection">Compare this Hotel</li>
+                    </ul>
+                </div>
+
                 <!-- Ibis Hotel -->
                 <hr>
                 <input type="checkbox" name="hotel2" value="Ibis Hotel" id="info2"><img id="images" src="images/ibisMain.jpg" alt="Ibis Hotel" width="260px"><br><br>
@@ -276,10 +303,10 @@ require_once "incl/HotelInfo.php";
                     <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                         <h3> We Accept: </h3>
                         <ul>
-                            <li><i class="fa fa-cc-paypal"></i>  Paypal</li>
-                            <li><i class="fa fa-cc-mastercard"></i>  Mastercard</li>
-                            <li><i class="fa fa-cc-amex"></i>  American Express</li>
-                            <li><i class="fa fa-cc-visa"></i>  Visa </a> </li>
+                            <li><i class="fa fa-cc-paypal"></i> Paypal</li>
+                            <li><i class="fa fa-cc-mastercard"></i> Mastercard</li>
+                            <li><i class="fa fa-cc-amex"></i> American Express</li>
+                            <li><i class="fa fa-cc-visa"></i> Visa </a> </li>
                         </ul>
                     </div>
                 </div>

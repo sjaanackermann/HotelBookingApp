@@ -76,10 +76,29 @@ body {
 
 /*Hotel Styling*/
 
+.card-title {
+	font-size: 30px;
+	font-family: ;
+	font-weight: 600;
+}
+
+.card-text {
+	font-size: 18px;
+}
+
+.list-group-item {
+	font-size: 22px;
+	font-weight: 600;
+}
+
 #images {
 	align-content: center;
 	margin-left: 20px;
 	border: rgb(43, 54, 148) 5px solid;
+}
+
+.selection {
+	margin-right: 20px;
 }
 
 
