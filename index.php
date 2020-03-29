@@ -118,16 +118,8 @@ require_once "incl/HotelInfo.php";
         <div class="field">
             <label class="label">Please select the Hotels that you would like to compare below:</label>
             <p class="control">
-                <!-- Yotel Hotel -->
-                <input type="checkbox" name="hotel1" value="Yotel Hotel" id="info1"><img id="images" src="images/yotelMain.jpg" alt="Yotel Hotel" width="260px"><br><br>
-                <h3><b>Yotel Hotel</b></h3>
-                <p id="discrip">Located in Edinburgh and with EICC reachable within 1 km, YOTEL Edinburgh provides express check-in and check-out, rooms, a fitness centre, free WiFi throughout the property and a bar. The property is set 1.9 km from Edinburgh Playhouse, 2 km from Edinburgh Castle and 2 km from National Museum of Scotland. The hotel features family rooms.
-                </p>
-                <?php echo "Daily Rate: R" . $Yotel->price . "" ?>
-                <br>
-
-
-                <!-- Card 1 -->
+                
+                <!-- Card 1: Yotel Hotel -->
                 <div class="card" style="width: 18rem;">
                     <img src="images/yotelMain.jpg" class="card-img-top" alt="Yotel Hotel">
                     <div class="card-body">
@@ -139,6 +131,8 @@ require_once "incl/HotelInfo.php";
                         <li class="list-group-item"><input type="checkbox" name="hotel1" value="Yotel Hotel" id="info1" class="selection">Compare this Hotel</li>
                     </ul>
                 </div>
+
+                    <br>
 
                  <!-- Card 2 -->
                  <div class="card" style="width: 18rem;">
