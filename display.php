@@ -88,7 +88,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights.  </b><br><br> The Daily Rate is: R" .$Yotel->price. "<br><br> The Total Cost for your stay will be " . "R";
+                    echo $diff . " nights</b>.  <br><br> The Daily Rate is: R" .$Yotel->price. "<br><br> The Total Cost for your stay will be " . "R";
                     echo $Yotel->price * $diff;
                 }
                 elseif ($diff < 1) {
@@ -123,7 +123,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $diff . " nights</b>. <br><br> The Daily Rate is: R" .$Ibis->price. "<br><br> The Total Cost will be " . "R";
                     echo $Ibis->price * $diff;
                 }
                 if ($diff < 1) {
@@ -159,7 +159,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Indigo->price. "<br><br> The Total Cost will be " . "R";
                     echo $Indigo->price * $diff;
                 }
                 if ($diff < 1) {
@@ -196,7 +196,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Sandman->price. "<br><br> The Total Cost will be " . "R";
                     echo $Sandman->price * $diff;
                 }
                 if ($diff < 1) {
@@ -230,7 +230,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Sleeperz->price. "<br><br> The Total Cost will be " . "R";
                     echo $Sleeperz->price * $diff;
                 }
                 if ($diff < 1) {
@@ -263,7 +263,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Motel->price. "<br><br> The Total Cost will be " . "R";
                     echo $Motel->price * $diff;
                 }
                 if ($diff < 1) {
@@ -297,7 +297,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Radisson->price. "<br><br> The Total Cost will be " . "R";
                     echo $Radisson->price * $diff;
                 }
                 if ($diff < 1) {
@@ -334,7 +334,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Residence->price. "<br><br> The Total Cost will be " . "R";
                     echo $Residence->price * $diff;
                 }
                 if ($diff < 1) {
@@ -369,7 +369,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Hampton->price. "<br><br> The Total Cost will be " . "R";
                     echo $Hampton->price * $diff;
                 }
                 if ($diff < 1) {
@@ -405,7 +405,7 @@ require "incl/HotelInfo.php";
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>. <br><br> The total cost will be " . "R";
+                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Alexandra->price. "<br><br> The Total Cost will be " . "R";
                     echo $Alexandra->price * $diff;
                 }
                 if ($diff < 1) {
