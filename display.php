@@ -124,7 +124,7 @@ require "incl/HotelInfo.php";
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
                     echo $diff . " nights</b>. <br><br> The Daily Rate is: R" .$Ibis->price. "<br><br> The Total Cost will be " . "R";
-                    echo $Ibis->price * $diff;
+                    echo floor($Ibis->price * $diff);
                 }
                 if ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
@@ -160,7 +160,7 @@ require "incl/HotelInfo.php";
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
                     echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Indigo->price. "<br><br> The Total Cost will be " . "R";
-                    echo $Indigo->price * $diff;
+                    echo floor($Indigo->price * $diff);
                 }
                 if ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
@@ -197,7 +197,7 @@ require "incl/HotelInfo.php";
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
                     echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Sandman->price. "<br><br> The Total Cost will be " . "R";
-                    echo $Sandman->price * $diff;
+                    echo floor($Sandman->price * $diff);
                 }
                 if ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
@@ -231,7 +231,7 @@ require "incl/HotelInfo.php";
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
                     echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Sleeperz->price. "<br><br> The Total Cost will be " . "R";
-                    echo $Sleeperz->price * $diff;
+                    echo floor($Sleeperz->price * $diff);
                 }
                 if ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
@@ -264,7 +264,7 @@ require "incl/HotelInfo.php";
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
                     echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Motel->price. "<br><br> The Total Cost will be " . "R";
-                    echo $Motel->price * $diff;
+                    echo floor($Motel->price * $diff);
                 }
                 if ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
@@ -298,7 +298,7 @@ require "incl/HotelInfo.php";
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
                     echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Radisson->price. "<br><br> The Total Cost will be " . "R";
-                    echo $Radisson->price * $diff;
+                    echo floor($Radisson->price * $diff);
                 }
                 if ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
@@ -335,7 +335,7 @@ require "incl/HotelInfo.php";
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
                     echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Residence->price. "<br><br> The Total Cost will be " . "R";
-                    echo $Residence->price * $diff;
+                    echo floor($Residence->price * $diff);
                 }
                 if ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
@@ -370,7 +370,7 @@ require "incl/HotelInfo.php";
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
                     echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Hampton->price. "<br><br> The Total Cost will be " . "R";
-                    echo $Hampton->price * $diff;
+                    echo floor($Hampton->price * $diff);
                 }
                 if ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
@@ -406,7 +406,7 @@ require "incl/HotelInfo.php";
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
                     echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" .$Alexandra->price. "<br><br> The Total Cost will be " . "R";
-                    echo $Alexandra->price * $diff;
+                    echo floor($Alexandra->price * $diff);
                 }
                 if ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
