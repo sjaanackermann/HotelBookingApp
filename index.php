@@ -25,6 +25,9 @@ require_once "incl/HotelInfo.php";
     <!-- My CSS -->
     <link rel="stylesheet" href="./css/styles.css">
 
+    <!-- Emoji CSS -->
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap" rel="stylesheet">
@@ -36,10 +39,6 @@ require_once "incl/HotelInfo.php";
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <link rel="stylesheet" ref="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" type="text/css" media="all">
 
     <title>Hotel Booking</title>
 
@@ -65,7 +64,7 @@ require_once "incl/HotelInfo.php";
                     <div class="column">
                         <div class="box bg-dark">
                             <!-- Start of form for booking a hotel -->
-                            <form action="display.php" method="post" class="form">
+                            <form action="display.php" method="post" class="form" id="form">
                                 <!-- Div that contains the name input -->
                                 <div class="field">
                                     <label class="labels">Name:</label>
@@ -274,8 +273,14 @@ require_once "incl/HotelInfo.php";
                             <li> <a href="#"> <i class="fa fa-instagram"></i> </a> </li>
                         </ul>
                     </div>
-                    <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
-
+                    <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                        <h3> We Accept: </h3>
+                        <ul>
+                            <li><i class="fa fa-cc-paypal"></i>  Paypal</li>
+                            <li><i class="fa fa-cc-mastercard"></i>  Mastercard</li>
+                            <li><i class="fa fa-cc-amex"></i>  American Express</li>
+                            <li><i class="fa fa-cc-visa"></i>  Visa </a> </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -284,17 +289,6 @@ require_once "incl/HotelInfo.php";
         <div class="footer-bottom">
             <div class="containers">
                 <p> Copyright © 2020. All rights reserved. </p>
-
-                <p>
-                    <ul class="nav nav-pills payments">
-                        <li>We Accept: </li>
-                        <li><i class="fa fa-cc-paypal"></i></li>
-                        <li><i class="fa fa-cc-mastercard"></i></li>
-                        <li><i class="fa fa-cc-amex"></i></li>
-                        <li><i class="fa fa-cc-visa"></i></li>
-                    </ul>
-                </p>
-
             </div>
         </div>
         </div>
@@ -308,6 +302,7 @@ require_once "incl/HotelInfo.php";
 <script>
     new WOW().init();
 </script>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
