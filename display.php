@@ -89,7 +89,7 @@ require "incl/HotelInfo.php";
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
                     echo $diff . " nights</b>.  <br><br> The Daily Rate is: R" .$Yotel->price. "<br><br> The Total Cost for your stay will be " . "R";
-                    echo $Yotel->price * $diff;
+                    echo floor($Yotel->price * $diff);
                 }
                 elseif ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";

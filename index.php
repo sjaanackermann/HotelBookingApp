@@ -41,7 +41,6 @@ require_once "incl/HotelInfo.php";
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <link rel="stylesheet" ref="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" type="text/css" media="all">
 
-
     <title>Hotel Booking</title>
 
 
@@ -106,6 +105,7 @@ require_once "incl/HotelInfo.php";
                                     <label class="labels">Check-Out:</label>
                                     <input class="input" id="out" name="out" type="date" required>
                                 </div>
+
                                 <!-- End of Div -->
                         </div>
                     </div>
@@ -220,9 +220,6 @@ require_once "incl/HotelInfo.php";
     <div class="field">
         <div class="control">
             <a href="display.php"> <button class="button" name="submit" onClick="confSubmit(this.form);">Compare</button></a>
-        </div>
-        <div class="control">
-            <button class="button">Cancel</button>
         </div>
     </div>
     <!-- End of Div -->
