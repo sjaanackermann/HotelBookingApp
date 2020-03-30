@@ -46,7 +46,7 @@ use PHPMailer\PHPMailer\Exception;
 <body class="emailFinal">
 
     <!-- Navbar Starts Here -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #254D7E;">
         <a class="navbar-brand" href="#">
             <img src="images/logo.png" alt="Logo" style="width:40px;">
         </a>

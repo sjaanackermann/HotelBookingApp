@@ -48,7 +48,7 @@ require_once "incl/HotelInfo.php";
 
 <body class="index">
     <!-- Navbar Starts Here -->
-    <nav class="navbar navbar-expand-sm bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #254D7E;">
         <a class="navbar-brand" href="#">
             <img src="images/logo.png" alt="Logo" style="width:40px;">
         </a>
@@ -112,7 +112,7 @@ require_once "incl/HotelInfo.php";
     <!-- Div that contains hotel choices -->
     <div class="container">
         <div class="field">
-            <label class="label">Please select the Hotels that you would like to compare below:</label>
+            <label class="label">Please select the two Hotels that you would like to compare below:</label>
             <p class="control">
 
                 <!-- Card 1: Yotel Hotel -->

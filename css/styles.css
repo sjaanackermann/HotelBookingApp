@@ -4,8 +4,12 @@ body {
 }
 
 /*Navbar Styling*/
-.bg-dark{
+.navbar .navbar-expand-sm .bg-dark .navbar-custom{
 background-color: #00003E;
+}
+
+.logo {
+	padding-left: 10px;
 }
 
 
