@@ -4,9 +4,7 @@ body {
 }
 
 /*Navbar Styling*/
-.navbar .navbar-expand-sm .bg-dark .navbar-custom{
-background-color: #00003E;
-}
+
 
 .logo {
 	padding-left: 10px;
@@ -44,6 +42,11 @@ background-color: #00003E;
 
 
 /*Form Styling*/
+.indexSelect {
+	color: whitesmoke;
+	background-color: #254D7E;
+	border-radius: 4px;
+}
 
 
 .label {

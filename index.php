@@ -59,60 +59,66 @@ require_once "incl/HotelInfo.php";
         <section class="section">
             <h2 class="heading">Welcome To Scotland Bookings!</h2>
             <p class="headingp">Please enter your details below:</p>
-            <div class="container">
-                        <div class="box">
-                            <!-- Start of form for booking a hotel -->
-                            <form action="display.php" method="post" class="form" id="form">
-                                <!-- Div that contains the name input -->
-                                <div class="field">
-                                    <label class="labels">Name:</label>
-                                    <p class="control">
-                                        <input class="input" type="text" name="name" placeholder="Please enter your name" required>
-                                    </p>
-                                </div>
-                                <!-- End of Div -->
-
-                                <!-- Div that contains the surname input -->
-                                <div class="field">
-                                    <label class="labels">Surname:</label>
-                                    <p class="control">
-                                        <input class="input" type="text" name="surname" placeholder="Please enter your surname" required>
-                                    </p>
-                                </div>
-                                <!-- End of Div -->
-
-                                <!-- Div that contains the email input -->
-                                <div class="field">
-                                    <label class="labels">Email:</label>
-                                    <p class="control">
-                                        <input class="input" type="email" name="email" placeholder="Please enter your email address" required>
-                                    </p>
-                                </div>
-                                <!-- End of Div -->
-
-                                <!-- Div that contains check out date -->
-                                <div class="field">
-                                    <label class="labels">Check-In:</label>
-                                    <input class="input" id="in" name="in" type="date" min="today" required>
-                                </div>
-                                <!-- End of Div -->
-
-                                <!-- Div that contains check out date -->
-                                <div class="field">
-                                    <label class="labels">Check-Out:</label>
-                                    <input class="input" id="out" name="out" type="date" required>
-                                </div>
-
-                                <!-- End of Div -->
-                        </div>
-            </div>
-
         </section>
     </div>
+
+    <div class="container">
+        <div class="box">
+            <!-- Start of form for booking a hotel -->
+            <form action="display.php" method="post" class="form" id="form">
+                <!-- Div that contains the name input -->
+                <div class="field">
+                    <label class="labels">Name:</label>
+                    <p class="control">
+                        <input class="input" type="text" name="name" placeholder="Please enter your name" required>
+                    </p>
+                </div>
+                <!-- End of Div -->
+
+                <!-- Div that contains the surname input -->
+                <div class="field">
+                    <label class="labels">Surname:</label>
+                    <p class="control">
+                        <input class="input" type="text" name="surname" placeholder="Please enter your surname" required>
+                    </p>
+                </div>
+                <!-- End of Div -->
+
+                <!-- Div that contains the email input -->
+                <div class="field">
+                    <label class="labels">Email:</label>
+                    <p class="control">
+                        <input class="input" type="email" name="email" placeholder="Please enter your email address" required>
+                    </p>
+                </div>
+                <!-- End of Div -->
+
+                <!-- Div that contains check out date -->
+                <div class="field">
+                    <label class="labels">Check-In:</label>
+                    <input class="input" id="in" name="in" type="date" min="today" required>
+                </div>
+                <!-- End of Div -->
+
+                <!-- Div that contains check out date -->
+                <div class="field">
+                    <label class="labels">Check-Out:</label>
+                    <input class="input" id="out" name="out" type="date" required>
+                </div>
+
+                <!-- End of Div -->
+        </div>
+    </div>
+
+    <br>
+    <br>
+
     <!-- Div that contains hotel choices -->
     <div class="container">
         <div class="field">
-            <label class="label">Please select the two Hotels that you would like to compare below:</label>
+            <div class="box">
+                <label class="indexSelect">Please select the two Hotels that you would like to compare below:</label>
+            </div>
             <p class="control">
 
                 <!-- Card 1: Yotel Hotel -->
@@ -207,7 +213,7 @@ require_once "incl/HotelInfo.php";
                         <h5 class="card-title">Motel One Hotel</h5>
                         <hr>
                         <p class="card-text">Boasting an excellent location in Glasgow city centre, Motel One Glasgow is next to Central Train Station and is only a 9-minute walk from George Square and Queen Street Train Station.
-                    The Hotel is 200 m from the famous Buchanan Street Style Mile, while the Hydro is 1.6 km away. The Royal Concert Hall is 900 m from the property.</p>
+                            The Hotel is 200 m from the famous Buchanan Street Style Mile, while the Hydro is 1.6 km away. The Royal Concert Hall is 900 m from the property.</p>
                     </div>
                     <ul class="list-group list-group-flush">
                         <br>
@@ -215,7 +221,7 @@ require_once "incl/HotelInfo.php";
                         <li class="list-group-item"><input type="checkbox" name="hotel6" value="select" id="info6" class="selection">Compare this Hotel</li>
                     </ul>
                 </div>
-                
+
                 <br>
 
                 <!-- Card 7: Radisson Red Hotel -->
@@ -232,7 +238,7 @@ require_once "incl/HotelInfo.php";
                         <li class="list-group-item"><input type="checkbox" name="hotel7" value="select" id="info7" class="selection">Compare this Hotel</li>
                     </ul>
                 </div>
-                
+
                 <br>
 
                 <!-- Card 8: Residence Inn Hotel -->
@@ -249,7 +255,7 @@ require_once "incl/HotelInfo.php";
                         <li class="list-group-item"><input type="checkbox" name="hotel8" value="select" id="info8" class="selection">Compare this Hotel</li>
                     </ul>
                 </div>
-                
+
                 <br>
 
                 <!-- Card 9: Hampton Hotel -->
@@ -283,9 +289,9 @@ require_once "incl/HotelInfo.php";
                         <li class="list-group-item"><input type="checkbox" name="hotel10" value="select" id="info10" class="selection">Compare this Hotel</li>
                     </ul>
                 </div>
-                
+
                 <br>
-                
+
             </p>
         </div>
     </div>
@@ -349,10 +355,10 @@ require_once "incl/HotelInfo.php";
                     <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                         <h3> We Accept: </h3>
                         <ul>
-                            <li class="payments"><i class="fa fa-cc-paypal"></i>    PayPal</li>
-                            <li class="payments"><i class="fa fa-cc-mastercard"></i>    Master Card</li>
-                            <li class="payments"><i class="fa fa-cc-amex"></i>    American Express</li>
-                            <li class="payments"><i class="fa fa-cc-visa"></i>    Visa</li>
+                            <li class="payments"><i class="fa fa-cc-paypal"></i> PayPal</li>
+                            <li class="payments"><i class="fa fa-cc-mastercard"></i> Master Card</li>
+                            <li class="payments"><i class="fa fa-cc-amex"></i> American Express</li>
+                            <li class="payments"><i class="fa fa-cc-visa"></i> Visa</li>
                         </ul>
                     </div>
                 </div>
@@ -386,11 +392,11 @@ require_once "incl/HotelInfo.php";
     });
 
     var limit = 2;
-                $('input.selection').on('change', function(evt) {
-                    if ($("input[type='checkbox']:checked").length > limit) {
-                        this.checked = false;
-                    }
-                });
+    $('input.selection').on('change', function(evt) {
+        if ($("input[type='checkbox']:checked").length > limit) {
+            this.checked = false;
+        }
+    });
 </script>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
