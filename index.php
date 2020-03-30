@@ -384,6 +384,13 @@ require_once "incl/HotelInfo.php";
     checkboxes.click(function() {
         submitButt.attr("disabled", !checkboxes.is(":checked"));
     });
+
+    var limit = 2;
+                $('input.selection').on('change', function(evt) {
+                    if ($("input[type='checkbox']:checked").length > limit) {
+                        this.checked = false;
+                    }
+                });
 </script>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

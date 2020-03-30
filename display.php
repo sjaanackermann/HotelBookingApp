@@ -488,10 +488,10 @@ require "incl/HotelInfo.php";
                             <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                                 <h3> We Accept: </h3>
                                 <ul>
-                                    <li class="payments"><i class="fa fa-cc-paypal"></i>    PayPal</li>
-                                    <li class="payments"><i class="fa fa-cc-mastercard"></i>    Master Card</li>
-                                    <li class="payments"><i class="fa fa-cc-amex"></i>    American Express</li>
-                                    <li class="payments"><i class="fa fa-cc-visa"></i>    Visa</li>
+                                    <li class="payments"><i class="fa fa-cc-paypal"></i> PayPal</li>
+                                    <li class="payments"><i class="fa fa-cc-mastercard"></i> Master Card</li>
+                                    <li class="payments"><i class="fa fa-cc-amex"></i> American Express</li>
+                                    <li class="payments"><i class="fa fa-cc-visa"></i> Visa</li>
                                 </ul>
                             </div>
                         </div>
@@ -512,6 +512,7 @@ require "incl/HotelInfo.php";
                 checkboxes.click(function() {
                     submitButt.attr("disabled", !checkboxes.is(":checked"));
                 });
+
             </script>
 
 </body>
