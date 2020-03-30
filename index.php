@@ -46,7 +46,7 @@ require_once "incl/HotelInfo.php";
 
 </head>
 
-<body>
+<body class="index">
     <!-- Navbar Starts Here -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <a class="navbar-brand" href="#">
@@ -60,9 +60,7 @@ require_once "incl/HotelInfo.php";
             <h2 class="heading">Welcome To Scotland Bookings!</h2>
             <p class="headingp">Please enter your details below:</p>
             <div class="container">
-                <div class="columns">
-                    <div class="column">
-                        <div class="box bg-dark">
+                        <div class="box">
                             <!-- Start of form for booking a hotel -->
                             <form action="display.php" method="post" class="form" id="form">
                                 <!-- Div that contains the name input -->
@@ -107,8 +105,6 @@ require_once "incl/HotelInfo.php";
 
                                 <!-- End of Div -->
                         </div>
-                    </div>
-                </div>
             </div>
 
         </section>

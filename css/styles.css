@@ -42,7 +42,7 @@ body {
 .box {
     width: 50%;
 	margin-left:25%;
-	background-color: rgb(81, 81, 112);
+	background-color: #00003E;
 	color: white;
 	font-size: 20px;
 }
@@ -55,14 +55,14 @@ body {
 
 .button {
 	margin-top: 1%;
-	background-color: #31BDE6;
+	background-color: #00003E;
 	color: #fff;
 }
 
 input[type=submit]{
 	margin: auto;
 	padding: auto;
-	background-color: #31BDE6;
+	background-color: #00003E;
 	color: #fff;
 	border-color: #dbdbdb;
 	border-width: 1px;
@@ -284,6 +284,10 @@ h3 {
 	color:#fff;
 }
 
+.index {
+	background-color: #31BDE6;
+}
+
 
 /*display.php*/
 .labeled {
@@ -298,4 +302,6 @@ h3 {
 
 
 /*finish.php*/
-
+.emailFinal {
+	background-color: #31BDE6;
+}
