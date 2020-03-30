@@ -38,11 +38,13 @@ body {
 	color: white;
 }
 
+/*Carousel Styling*/
 
 
 
 /*Form Styling*/
 .indexSelect {
+	text-align: center;
 	color: whitesmoke;
 	background-color: #254D7E;
 	border-radius: 4px;
