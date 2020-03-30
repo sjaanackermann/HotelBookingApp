@@ -54,15 +54,14 @@ body {
 }
 
 .button {
-    margin-left:40%;
 	margin-top: 1%;
 	background-color: #31BDE6;
 	color: #fff;
 }
 
 input[type=submit]{
-	margin-left:40%;
-	margin-top: 1%;
+	margin: auto;
+	padding: auto;
 	background-color: #31BDE6;
 	color: #fff;
 	border-color: #dbdbdb;
@@ -79,8 +78,12 @@ input[type=submit]:hover {
 	color: #363636;
 }
 
+.control {
+	text-align: center;
+	align-content: center;
+}
+
 .cancel {
-	margin-left: 40%;
     margin-top: 1%;
     background-color: #31BDE6;
     color: #fff;
@@ -186,16 +189,22 @@ h3 {
 	margin-left: 0;
 	padding-left: 0;
 	margin-top: 15px;
-	color: #7F8C8D;
+	color:#fff;
 }
 .footer ul li a {
 	padding: 0 0 5px 0;
 	display: block;
 }
 .footer a {
-	color: #78828D;
+	color: #fff;
     color:#fff;
 }
+
+.footer i {
+	color: #fff;
+    color:#fff;
+}
+
 .supportLi h4 {
 	font-size: 20px;
 	font-weight: lighter;
@@ -266,10 +275,13 @@ h3 {
 .footer-bottom p.pull-left {
 	padding-top: 6px;
 }
+
 .payments {
-    color: white;
-    font-size: 24px;
-    padding-left: 15px;	
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 15px;
+	color:#fff;
 }
 
 

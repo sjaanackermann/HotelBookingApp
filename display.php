@@ -428,7 +428,9 @@ require "incl/HotelInfo.php";
             }
 
             //Book & Cancel Buttons
+            echo "<div class=\"control\" >";
             echo "<input type=\"submit\"disabled>";
+            echo "</div>";
             echo "</form>";
             echo "<div class=\"control\" id=\"cancel\" action=\"index.php\">";
             echo "<a href =\"index.php\"> <button class=\"button\">Cancel</button></a>";
@@ -486,10 +488,10 @@ require "incl/HotelInfo.php";
                             <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                                 <h3> We Accept: </h3>
                                 <ul>
-                                    <li><i class="fa fa-cc-paypal"></i> Paypal</li>
-                                    <li><i class="fa fa-cc-mastercard"></i> Mastercard</li>
-                                    <li><i class="fa fa-cc-amex"></i> American Express</li>
-                                    <li><i class="fa fa-cc-visa"></i> Visa </a> </li>
+                                    <li class="payments"><i class="fa fa-cc-paypal"></i>    PayPal</li>
+                                    <li class="payments"><i class="fa fa-cc-mastercard"></i>    Master Card</li>
+                                    <li class="payments"><i class="fa fa-cc-amex"></i>    American Express</li>
+                                    <li class="payments"><i class="fa fa-cc-visa"></i>    Visa</li>
                                 </ul>
                             </div>
                         </div>

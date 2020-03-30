@@ -124,9 +124,11 @@ require_once "incl/HotelInfo.php";
                     <img src="images/yotelMain.jpg" class="card-img-top" alt="Yotel Hotel">
                     <div class="card-body">
                         <h5 class="card-title">Yotel Hotel</h5>
+                        <hr>
                         <p class="card-text">Located in Edinburgh and with EICC reachable within 1 km, YOTEL Edinburgh provides express check-in and check-out, rooms, a fitness centre, free WiFi throughout the property and a bar. The property is set 1.9 km from Edinburgh Playhouse, 2 km from Edinburgh Castle and 2 km from National Museum of Scotland.</p>
                     </div>
                     <ul class="list-group list-group-flush">
+                        <br>
                         <li class="list-group-item"><?php echo "Daily Rate: R" . $Yotel->price . "" ?></li>
                         <li class="list-group-item"><input type="checkbox" name="hotel1" value="select" id="info1" class="selection">Compare this Hotel</li>
                     </ul>
@@ -139,9 +141,11 @@ require_once "incl/HotelInfo.php";
                     <img src="images/ibisMain.jpg" class="card-img-top" alt="Ibis Hotel">
                     <div class="card-body">
                         <h5 class="card-title">Ibis Hotel</h5>
+                        <hr>
                         <p class="card-text">Set in Glasgow, 1.1 km from Buchanan Galleries, ibis Styles Glasgow Centre West offers air-conditioned rooms and a bar. Among the facilities of this property are a restaurant, a 24-hour front desk and a shared lounge, along with free WiFi.</p>
                     </div>
                     <ul class="list-group list-group-flush">
+                        <br>
                         <li class="list-group-item"><?php echo "Daily Rate: R" . $Ibis->price . "" ?></li>
                         <li class="list-group-item"><input type="checkbox" name="hotel2" value="select" id="info2" class="selection">Compare this Hotel</li>
                     </ul>
@@ -154,9 +158,11 @@ require_once "incl/HotelInfo.php";
                     <img src="images/indigoMain.jpg" class="card-img-top" alt="Hotel Indigo">
                     <div class="card-body">
                         <h5 class="card-title">Hotel Indigo</h5>
+                        <hr>
                         <p class="card-text">Boasting a bar and free WiFi, Hotel Indigo - Dundee is situated in Dundee, 1 km from Discovery Point. Around 1.4 km from University of Dundee and 2 km from Abertay University, the property is also close to Dundee Central Library. The property is located 400 m from Wellgate Shopping Centre.</p>
                     </div>
                     <ul class="list-group list-group-flush">
+                        <br>
                         <li class="list-group-item"><?php echo "Daily Rate: R" . $Indigo->price . "" ?></li>
                         <li class="list-group-item"><input type="checkbox" name="hotel3" value="select" id="info3" class="selection">Compare this Hotel</li>
                     </ul>
@@ -169,9 +175,11 @@ require_once "incl/HotelInfo.php";
                     <img src="images/sandmanMain.jpg" class="card-img-top" alt="Sandman Hotel">
                     <div class="card-body">
                         <h5 class="card-title">Sandman Hotel</h5>
+                        <hr>
                         <p class="card-text">Popular points of interest near the accommodation include Beach Ballroom, Aberdeen Art Gallery and Bon Accord & St Nicholas. The nearest airport is Aberdeen Airport, 8 km from Sandman Signature Aberdeen Hotel.</p>
                     </div>
                     <ul class="list-group list-group-flush">
+                        <br>
                         <li class="list-group-item"><?php echo "Daily Rate: R" . $Sandman->price . "" ?></li>
                         <li class="list-group-item"><input type="checkbox" name="hotel4" value="select" id="info4" class="selection">Compare this Hotel</li>
                     </ul>
@@ -179,62 +187,109 @@ require_once "incl/HotelInfo.php";
 
                 <br>
 
-                <!-- Sleeperz Hotel -->
-                <hr>
-                <input type="checkbox" name="hotel5" value="select" id="info5"><img id="images" src="images/sleeperzMain.jpg" alt="Sleeperz Hotel" width="260px"><br><br>
-                <h3><b>Sleeperz Hotel</b></h3>
-                <p id="discrip">Sleeperz Hotel Dundee is a 120-bedroom hotel located directly above Dundee Railway Station in the city centre, and directly opposite the V&A Dundee. Guests can enjoy views over the nearby V&A Museum Dundee, the River Tay and onto the Waterfront Plaza.
-                </p>
-                <?php echo "Daily Rate: R" . $Sleeperz->price . "" ?>
+                <!-- Card 5: Sleeperz Hotel -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/sleeperzMain.jpg" class="card-img-top" alt="Sleeperz Hotel">
+                    <div class="card-body">
+                        <h5 class="card-title">Sleeperz Hotel</h5>
+                        <hr>
+                        <p class="card-text">Sleeperz Hotel Dundee is a 120-bedroom hotel located directly above Dundee Railway Station in the city centre, and directly opposite the V&A Dundee. Guests can enjoy views over the nearby V&A Museum Dundee, the River Tay and onto the Waterfront Plaza.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <br>
+                        <li class="list-group-item"><?php echo "Daily Rate: R" . $Sleeperz->price . "" ?></li>
+                        <li class="list-group-item"><input type="checkbox" name="hotel5" value="select" id="info5" class="selection">Compare this Hotel</li>
+                    </ul>
+                </div>
+
                 <br>
 
-                <!-- Motel One Hotel -->
-                <hr>
-                <input type="checkbox" name="hotel6" value="select" id="info6"><img id="images" src="images/motelMain.jpg" alt="Motel One Hotel" width="260px"><br><br>
-                <h3><b>Motel One Hotel</b></h3>
-                <p id="discrip">Boasting an excellent location in Glasgow city centre, Motel One Glasgow is next to Central Train Station and is only a 9-minute walk from George Square and Queen Street Train Station.
-                    The Hotel is 200 m from the famous Buchanan Street Style Mile, while the Hydro is 1.6 km away. The Royal Concert Hall is 900 m from the property.
-                    Glasgow City Centre is a great choice for travellers interested in shopping for clothes, shopping and nightlife.
-                </p>
-                <?php echo "Daily Rate: R" . $Motel->price . "" ?>
+                <!-- Card 6: Motel One Hotel -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/motelMain.jpg" class="card-img-top" alt="Motel One Hotel">
+                    <div class="card-body">
+                        <h5 class="card-title">Motel One Hotel</h5>
+                        <hr>
+                        <p class="card-text">Boasting an excellent location in Glasgow city centre, Motel One Glasgow is next to Central Train Station and is only a 9-minute walk from George Square and Queen Street Train Station.
+                    The Hotel is 200 m from the famous Buchanan Street Style Mile, while the Hydro is 1.6 km away. The Royal Concert Hall is 900 m from the property.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <br>
+                        <li class="list-group-item"><?php echo "Daily Rate: R" . $Motel->price . "" ?></li>
+                        <li class="list-group-item"><input type="checkbox" name="hotel6" value="select" id="info6" class="selection">Compare this Hotel</li>
+                    </ul>
+                </div>
+                
                 <br>
 
-                <!-- Radisson Hotel -->
-                <hr>
-                <input type="checkbox" name="hotel7" value="select" id="info7"><img id="images" src="images/radissonMain.jpg" alt="Radisson Red Hotel" width="260px"><br><br>
-                <h3><b>Radisson Red Hotel</b></h3>
-                <p id="discrip">Radisson RED hotel in Glagsow features 174 rooms, 3 event and games studios, Glasgow’s first official rooftop bar, a fitness room and 76 car parking spaces. The property is located 183 m from The Hydro, and is a 4-minute walk from the SECC.</p>
-                <?php echo "Daily Rate: R" . $Radisson->price . "" ?>
+                <!-- Card 7: Radisson Red Hotel -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/radissonMain.jpg" class="card-img-top" alt="Radisson Red Hotel">
+                    <div class="card-body">
+                        <h5 class="card-title">Radisson Red Hotel</h5>
+                        <hr>
+                        <p class="card-text">Radisson RED hotel in Glagsow features 174 rooms, 3 event and games studios, Glasgow’s first official rooftop bar, a fitness room and 76 car parking spaces. The property is located 183 m from The Hydro, and is a 4-minute walk from the SECC.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <br>
+                        <li class="list-group-item"><?php echo "Daily Rate: R" . $Radisson->price . "" ?></li>
+                        <li class="list-group-item"><input type="checkbox" name="hotel7" value="select" id="info7" class="selection">Compare this Hotel</li>
+                    </ul>
+                </div>
+                
                 <br>
 
-                <!--Residence Inn Hotel -->
-                <hr>
-                <input type="checkbox" name="hotel8" value="select" id="info8"><img id="images" src="images/residenceMain.jpg" alt="Residence Inn" width="260px"><br><br>
-                <h3><b>Residence Inn</b></h3>
-                <p id="discrip">
-                    Residence Inn by Marriott Aberdeen is set within a 20-minute walk from the beach in Aberdeen. Free WiFi is available. Bon Accord & St Nicholas shopping centre is less than 100 m from the hotel and Union Square shopping centre, Union Street and the Aberdeen Maritime Museum are only a few minutes’ walk away.
-                </p>
-                <?php echo "Daily Rate: R" . $Residence->price . "" ?>
+                <!-- Card 8: Residence Inn Hotel -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/residenceMain.jpg" class="card-img-top" alt="Residence Inn">
+                    <div class="card-body">
+                        <h5 class="card-title">Residence Inn Hotel</h5>
+                        <hr>
+                        <p class="card-text">Residence Inn by Marriott Aberdeen is set within a 20-minute walk from the beach in Aberdeen. Bon Accord & St Nicholas shopping centre is less than 100 m from the hotel and Union Square shopping centre, Union Street and the Aberdeen Maritime Museum are only a few minutes’ walk away.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <br>
+                        <li class="list-group-item"><?php echo "Daily Rate: R" . $Residence->price . "" ?></li>
+                        <li class="list-group-item"><input type="checkbox" name="hotel8" value="select" id="info8" class="selection">Compare this Hotel</li>
+                    </ul>
+                </div>
+                
                 <br>
 
-                <!-- Hampton Hotel -->
-                <hr>
-                <input type="checkbox" name="hotel9" value="select" id="info9"><img id="images" src="images/hamptonMain.jpg" alt="Hampton Hotel" width="260px"><br><br>
-                <h3><b>Hampton Hotel</b></h3>
-                <p id="discrip">Set in Westhill, 12.9 km from Aberdeen, Hampton By Hilton Aberdeen Westhill features a 24-hour fitness centre and business facilities. Union Square Shopping Centre is 12.9 km from Hampton By Hilton Aberdeen Westhill, while the beach is 9.7 km away. The nearest airport is Aberdeen Airport, 11.3 km from the property. Aberdeen rail station is 12.9 km from Hampton By Hilton Aberdeen Westhill.
-                </p>
-                <?php echo "Daily Rate: R" . $Hampton->price . "" ?>
+                <!-- Card 9: Hampton Hotel -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/hamptonMain.jpg" class="card-img-top" alt="Hampton Hotel">
+                    <div class="card-body">
+                        <h5 class="card-title">Hampton Hotel</h5>
+                        <hr>
+                        <p class="card-text">Set in Westhill, 12.9 km from Aberdeen, Hampton By Hilton Aberdeen Westhill features a 24-hour fitness centre and business facilities. Union Square Shopping Centre is 12.9 km from Hampton By Hilton Aberdeen Westhill, while the beach is 9.7 km away. The nearest airport is Aberdeen Airport, 11.3 km from the property. Aberdeen rail station is 12.9 km from Hampton By Hilton Aberdeen Westhill.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <br>
+                        <li class="list-group-item"><?php echo "Daily Rate: R" . $Hampton->price . "" ?></li>
+                        <li class="list-group-item"><input type="checkbox" name="hotel9" value="select" id="info9" class="selection">Compare this Hotel</li>
+                    </ul>
+                </div>
+
                 <br>
 
-                <!-- Alexandra Hotel -->
-                <hr>
-                <input type="checkbox" name="hotel10" value="select" id="info10"><img id="images" src="images/alexandraMain.jpg" alt="Alexandra Hotel" width="260px"><br><br>
-                <h3><b>Alexandra Hotel</b></h3>
-                <p id="discrip">Set in Ballater, 14 km from Balmoral Castle, Alexandra Hotel offers accommodation with a restaurant, free private parking and a bar. Around 14 km from Royal Lochnagar Distillery, the property is also 25 km away from Lecht 2090 ski & Multi activity centre and offers free WiFi.
-                </p>
-                <?php echo "Daily Rate: R" . $Alexandra->price . "" ?>
+                <!-- Card 10: Alexandra Hotel -->
+                <div class="card" style="width: 18rem;">
+                    <img src="images/alexandraMain.jpg" class="card-img-top" alt="Alexandra Hotel">
+                    <div class="card-body">
+                        <h5 class="card-title">Alexandra Hotel</h5>
+                        <hr>
+                        <p class="card-text">SSet in Ballater, 14 km from Balmoral Castle, Alexandra Hotel offers accommodation with a restaurant, free private parking and a bar. Around 14 km from Royal Lochnagar Distillery, the property is also 25 km away from Lecht 2090 ski & Multi activity centre.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <br>
+                        <li class="list-group-item"><?php echo "Daily Rate: R" . $Alexandra->price . "" ?></li>
+                        <li class="list-group-item"><input type="checkbox" name="hotel10" value="select" id="info10" class="selection">Compare this Hotel</li>
+                    </ul>
+                </div>
+                
                 <br>
-                <hr>
+                
             </p>
         </div>
     </div>
@@ -298,10 +353,10 @@ require_once "incl/HotelInfo.php";
                     <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                         <h3> We Accept: </h3>
                         <ul>
-                            <li><i class="fa fa-cc-paypal"></i> Paypal</li>
-                            <li><i class="fa fa-cc-mastercard"></i> Mastercard</li>
-                            <li><i class="fa fa-cc-amex"></i> American Express</li>
-                            <li><i class="fa fa-cc-visa"></i> Visa </a> </li>
+                            <li class="payments"><i class="fa fa-cc-paypal"></i>    PayPal</li>
+                            <li class="payments"><i class="fa fa-cc-mastercard"></i>    Master Card</li>
+                            <li class="payments"><i class="fa fa-cc-amex"></i>    American Express</li>
+                            <li class="payments"><i class="fa fa-cc-visa"></i>    Visa</li>
                         </ul>
                     </div>
                 </div>
@@ -327,12 +382,12 @@ require_once "incl/HotelInfo.php";
 
 <!-- JavaScript: Hides submit button until you have selected a hotel -->
 <script>
-var checkboxes = $("input[type='checkbox']"),
-    submitButt = $("input[type='submit']");
+    var checkboxes = $("input[type='checkbox']"),
+        submitButt = $("input[type='submit']");
 
-checkboxes.click(function() {
-    submitButt.attr("disabled", !checkboxes.is(":checked"));
-});
+    checkboxes.click(function() {
+        submitButt.attr("disabled", !checkboxes.is(":checked"));
+    });
 </script>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
