@@ -65,6 +65,18 @@ input[type=submit]{
 	margin-top: 1%;
 	background-color: #31BDE6;
 	color: #fff;
+	border-color: #dbdbdb;
+	border-width: 1px;
+	justify-content: center;
+	text-align: center;
+	border-radius: 4px;
+	padding: 5px 12px;
+	box-shadow: none;
+}
+
+input[type=submit]:hover {
+    border-color: #b5b5b5;
+	color: #363636;
 }
 
 .cancel {
@@ -99,7 +111,6 @@ padding: auto;
 
 .card-title {
 	font-size: 30px;
-	font-family: ;
 	font-weight: 600;
 }
 

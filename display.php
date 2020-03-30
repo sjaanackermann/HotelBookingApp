@@ -483,6 +483,15 @@ require "incl/HotelInfo.php";
                                     <li> <a href="#"> <i class="fa fa-instagram"></i> </a> </li>
                                 </ul>
                             </div>
+                            <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                                <h3> We Accept: </h3>
+                                <ul>
+                                    <li><i class="fa fa-cc-paypal"></i> Paypal</li>
+                                    <li><i class="fa fa-cc-mastercard"></i> Mastercard</li>
+                                    <li><i class="fa fa-cc-amex"></i> American Express</li>
+                                    <li><i class="fa fa-cc-visa"></i> Visa </a> </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -490,17 +499,6 @@ require "incl/HotelInfo.php";
                 <div class="footer-bottom">
                     <div class="containers">
                         <p> Copyright © 2020. All rights reserved. </p>
-
-                        <p>
-                            <ul class="nav nav-pills payments">
-                                <li>We Accept: </li>
-                                <li><i class="fa fa-cc-paypal"></i></li>
-                                <li><i class="fa fa-cc-mastercard"></i></li>
-                                <li><i class="fa fa-cc-amex"></i></li>
-                                <li><i class="fa fa-cc-visa"></i></li>
-                            </ul>
-                        </p>
-
                     </div>
                 </div>
             </footer>
