@@ -56,7 +56,7 @@ require "incl/HotelInfo.php";
 
 </head>
 
-<body>
+<body class="index">
     <!-- Navbar Starts Here -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <a class="navbar-brand" href="#">

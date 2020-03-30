@@ -48,7 +48,7 @@ require_once "incl/HotelInfo.php";
 
 <body class="index">
     <!-- Navbar Starts Here -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm bg-dark">
         <a class="navbar-brand" href="#">
             <img src="images/logo.png" alt="Logo" style="width:40px;">
         </a>
