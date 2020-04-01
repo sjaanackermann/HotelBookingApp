@@ -67,28 +67,16 @@ require_once "incl/HotelInfo.php";
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active" data-interval="10000">
                 <img src="images/jumboImage.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none">
-                    <h5>Welcome To Scotland Bookings!</h5>
-                    <p>Please enter your details below:</p>
                 </div>
             </div>
             <div class="carousel-item" data-interval="10000">
                 <img src="images/option1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none">
-                    <h5>Welcome To Scotland Bookings!</h5>
-                    <p>Please enter your details below:</p>
-                </div>
-            </div>
-            <div class="carousel-item" data-interval="10000">
-                <img src="images/option2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none">
-                    <h5>Welcome To Scotland Bookings!</h5>
-                    <p>Please enter your details below:</p>
                 </div>
             </div>
         </div>
@@ -109,14 +97,19 @@ require_once "incl/HotelInfo.php";
     <!-- Client Info Starts Here -->
 
     <div class="container">
+        <div class="field">
+            <div class="box">
+                <label style="font-size: 20px !important;">Please enter your details below:</label>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
         <div class="box">
             <!-- Start of form for booking a hotel -->
             <form action="display.php" method="post" class="form" id="form">
-                <div class="field">
-                    <div class="indexSelect">
-                        <label>Please enter your details below:</label>
-                    </div>
-                </div>
                 <br>
                 <!-- Div that contains the name input -->
                 <div class="field">
