@@ -21,10 +21,6 @@ require "incl/HotelInfo.php";
     <title>Confirm Booking</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bulma CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
-
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -59,19 +55,37 @@ require "incl/HotelInfo.php";
 <body class="index">
     <!-- Navbar Starts Here -->
     <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #254D7E;">
-        <a class="navbar-brand" href="#">
-            <img src="images/logo.png" alt="Logo" style="width:40px;">
-        </a>
-    </nav>
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" style="width:40px;">
+            </a>
+            <span class="navbar-text nav-text">
+                Scotland Bookings
+            </span>
+        </nav>
+
+        <br>
+        <br>
+
     <div class="display">
         <div class="column">
+
+        <div class="form entry title">
             <!-- PHP scripts that takes the information from the index page and displays it on this one -->
             <?php
+            echo "<br>";
             echo "<h2 class=\"text\">Greetings " . $_POST['name'] . " " . $_POST['surname'];
             "</h2>";
+            echo "<br>";
+            echo "<br>";
+            echo "<hr>";
+            echo "<br>";
             echo "<h3 class=\"text1\">Please see the details of the Hotels you selected below:</h3>";
+            echo "<br>";
+            ?>
+            </div>
+            
 
-
+            <?php
             // echo "<div class=\"control\" >";
             // echo "<form action=\"finish.php\" method=\"post\">";
 
@@ -79,7 +93,7 @@ require "incl/HotelInfo.php";
 
             if ($_POST['hotel1']) {
                 echo "<div class=\"column\">";
-                echo "<div class=\"box\" id=\"move\">";
+                echo "<div class=\"form entry display\" id=\"move\">";
                 echo "<img id=\"imagesd\" src=\"images/yotelMain.jpg\" alt=\"Yotel Hotel\" width=\"260px\"><br><br>";
                 echo "<b>You are viewing the ";
                 echo $Yotel->name . " Hotel for ";
@@ -113,7 +127,7 @@ require "incl/HotelInfo.php";
 
             if ($_POST['hotel2']) {
                 echo "<div class=\"column\">";
-                echo "<div class=\"box\" id=\"move\">";
+                echo "<div class=\"form entry display\" id=\"move\">";
                 echo "<img id=\"imagesd\" src=\"images/ibisMain.jpg\" alt=\"Ibis Hotel\" width=\"260px\"><br><br>";
                 echo "<b>You are viewing the ";
                 echo $Ibis->name . " Hotel for ";
@@ -149,7 +163,7 @@ require "incl/HotelInfo.php";
 
             if ($_POST['hotel3']) {
                 echo "<div class=\"column\">";
-                echo "<div class=\"box\" id=\"move\">";
+                echo "<div class=\"form entry display\" id=\"move\">";
                 echo "<img id=\"imagesd\" src=\"images/indigoMain.jpg\" alt=\"Indigo Hotel\" width=\"260px\"><br><br>";
                 echo "<b>You are viewing the ";
                 echo $Indigo->name . " Hotel for ";
@@ -186,7 +200,7 @@ require "incl/HotelInfo.php";
 
             if ($_POST['hotel4']) {
                 echo "<div class=\"column\">";
-                echo "<div class=\"box\" id=\"move\">";
+                echo "<div class=\"form entry display\" id=\"move\">";
                 echo "<img id=\"imagesd\" src=\"images/sandmanMain.jpg\" alt=\"Sandman Hotel\" width=\"260px\"><br><br>";
                 echo "<b>You are viewing the ";
                 echo $Sandman->name . " Hotel for ";
@@ -216,44 +230,11 @@ require "incl/HotelInfo.php";
                 //End of Div 
             }
 
-            //Sleeperz Hotel
-
-            if ($_POST['hotel5']) {
-                echo "<div class=\"column\">";
-                echo "<div class=\"box\" id=\"move\">";
-                echo "<img id=\"imagesd\" src=\"images/sleeperzMain.jpg\" alt=\"Sleeperz Hotel\" width=\"260px\"><br><br>";
-                echo "<b>You are viewing the ";
-                echo $Sleeperz->name . " Hotel for ";
-                $date1 = $_POST['in'];
-                $date2 = $_POST['out'];
-                // Formula to convert the dates into days   
-                $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
-                if ($diff >= 1) {
-                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" . $Sleeperz->price . "<br><br> The Total Cost will be " . "R";
-                    echo floor($Sleeperz->price * $diff);
-                }
-                if ($diff < 1) {
-                    echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
-                }
-                echo " <br><br><u>Facilities Include:</u><br>";
-                echo "Bar<br>";
-                echo "Smoking Friendly<br><br>";
-                //Div that contains buttons to confirm booking or cancel them 
-                echo "<div class=\"control\" >";
-                echo "<form action=\"finish.php\" method=\"post\">";
-                echo "<input type=\"checkbox\" name=\"hotel5\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel5\" class=\"labeled\">Select this hotel</label>";
-                echo "</div>";
-                echo "</div>";
-                echo "</div>";
-                //End of Div 
-            }
-
             //Motel One Hotel
 
             if ($_POST['hotel6']) {
                 echo "<div class=\"column\">";
-                echo "<div class=\"box\" id=\"move\">";
+                echo "<div class=\"form entry display\" id=\"move\">";
                 echo "<img id=\"imagesd\" src=\"images/motelMain.jpg\" alt=\"Motel One Hotel\" width=\"260px\"><br><br>";
                 echo "<b>You are viewing the ";
                 echo $Motel->name . " Hotel for ";
@@ -287,7 +268,7 @@ require "incl/HotelInfo.php";
 
             if ($_POST['hotel7']) {
                 echo "<div class=\"column\">";
-                echo "<div class=\"box\" id=\"move\">";
+                echo "<div class=\"form entry display\" id=\"move\">";
                 echo "<img id=\"imagesd\" src=\"images/radissonMain.jpg\" alt=\"Radisson Hotel\" width=\"260px\"><br><br>";
                 echo "<b>You are viewing the ";
                 echo $Radisson->name . " Hotel for ";
@@ -324,7 +305,7 @@ require "incl/HotelInfo.php";
 
             if ($_POST['hotel8']) {
                 echo "<div class=\"column\">";
-                echo "<div class=\"box\" id=\"move\">";
+                echo "<div class=\"form entry display\" id=\"move\">";
                 echo "<img id=\"imagesd\" src=\"images/residenceMain.jpg\" alt=\"Residence Inn Hotel\" width=\"260px\"><br><br>";
                 echo "<b>You are viewing the ";
                 echo $Residence->name . " Hotel for ";
@@ -359,7 +340,7 @@ require "incl/HotelInfo.php";
 
             if ($_POST['hotel9']) {
                 echo "<div class=\"column\">";
-                echo "<div class=\"box\" id=\"move\">";
+                echo "<div class=\"form entry display\" id=\"move\">";
                 echo "<img id=\"imagesd\" src=\"images/hamptonMain.jpg\" alt=\"Hampton Hotel\" width=\"260px\"><br><br>";
                 echo "<b>You are viewing the ";
                 echo $Hampton->name . " Hotel for ";
@@ -395,7 +376,7 @@ require "incl/HotelInfo.php";
 
             if ($_POST['hotel10']) {
                 echo "<div class=\"column\">";
-                echo "<div class=\"box\" id=\"move\">";
+                echo "<div class=\"form entry display\" id=\"move\">";
                 echo "<img id=\"imagesd\" src=\"images/alexandraMain.jpg\" alt=\"Alexandra Hotel\" width=\"260px\"><br><br>";
                 echo "<b>You are viewing the ";
                 echo $Alexandra->name . " Hotel for ";
@@ -428,6 +409,7 @@ require "incl/HotelInfo.php";
             }
 
             //Book & Cancel Buttons
+            echo "<br>";
             echo "<div class=\"control\" >";
             echo "<input type=\"submit\"disabled>";
             echo "</div>";
@@ -436,6 +418,7 @@ require "incl/HotelInfo.php";
             echo "<a href =\"index.php\"> <button class=\"button\">Cancel</button></a>";
             echo "</div>";
             echo "</div>";
+            echo "<br>";
 
             ?>
 

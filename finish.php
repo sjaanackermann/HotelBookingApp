@@ -47,10 +47,13 @@ use PHPMailer\PHPMailer\Exception;
 
     <!-- Navbar Starts Here -->
     <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #254D7E;">
-        <a class="navbar-brand" href="#">
-            <img src="images/logo.png" alt="Logo" style="width:40px;">
-        </a>
-    </nav>
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" style="width:40px;">
+            </a>
+            <span class="navbar-text nav-text">
+                Scotland Bookings
+            </span>
+        </nav>
 
     <?php
 
@@ -104,6 +107,7 @@ use PHPMailer\PHPMailer\Exception;
         $mail->send();
         echo "<div class=\"box\" id=\"move\">";
         echo 'Thank you for your Enquiry, we will be in touch shortly to finalise the booking!';
+        echo "<br>";
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
