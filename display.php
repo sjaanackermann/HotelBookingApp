@@ -73,13 +73,15 @@ require "incl/HotelInfo.php";
             <!-- PHP scripts that takes the information from the index page and displays it on this one -->
             <?php
             echo "<br>";
-            echo "<h2 class=\"text\">Greetings " . $_POST['name'] . " " . $_POST['surname'];
+            echo "<h2 class=\"text\">Greetings " . $_POST['name'] . " " . $_POST['surname']."!";
             "</h2>";
             echo "<br>";
             echo "<br>";
             echo "<hr>";
             echo "<br>";
             echo "<h3 class=\"text1\">Please see the details of the Hotels you selected below:</h3>";
+            echo "<br>";
+            echo "<hr>";
             echo "<br>";
             ?>
             </div>
@@ -112,11 +114,13 @@ require "incl/HotelInfo.php";
                 echo "Bar<br>";
                 echo "Buffet<br>";
                 echo "Free Parking<br><br>";
+                echo "<hr>";
+                echo "<br>";
                 //Div that contains buttons to confirm booking or cancel them 
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel1\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel1\" class=\"labeled\">Select this hotel</label>";
+                echo "<label for=\"hotel1\" class=\"labeled\">   Select this hotel</label>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
@@ -148,6 +152,8 @@ require "incl/HotelInfo.php";
                 echo "Bar<br>";
                 echo "Buffet<br>";
                 echo "Free Parking<br><br>";
+                echo "<hr>";
+                echo "<br>";
                 //Div that contains buttons to confirm booking or cancel them 
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
@@ -185,6 +191,8 @@ require "incl/HotelInfo.php";
                 echo "Spa<br>";
                 echo "Buffet<br>";
                 echo "Free Parking<br><br>";
+                echo "<hr>";
+                echo "<br>";
                 //Div that contains buttons to confirm booking or cancel them 
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
@@ -219,6 +227,8 @@ require "incl/HotelInfo.php";
                 echo "Wifi<br>";
                 echo "Bar<br>";
                 echo "Smoking Friendly<br><br>";
+                echo "<hr>";
+                echo "<br>";
                 //Div that contains buttons to confirm booking or cancel them 
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
@@ -253,6 +263,8 @@ require "incl/HotelInfo.php";
                 echo "Bar<br>";
                 echo "Buffet<br>";
                 echo "Free Parking<br><br>";
+                echo "<hr>";
+                echo "<br>";
                 //Div that contains buttons to confirm booking or cancel them 
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
@@ -290,6 +302,8 @@ require "incl/HotelInfo.php";
                 echo "Spa<br>";
                 echo "Buffet<br>";
                 echo "Parking<br><br>";
+                echo "<hr>";
+                echo "<br>";
                 //Div that contains buttons to confirm booking or cancel them 
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
@@ -325,6 +339,8 @@ require "incl/HotelInfo.php";
                 echo "Bar<br>";
                 echo "Spa<br>";
                 echo "Buffet<br><br>";
+                echo "<hr>";
+                echo "<br>";
                 //Div that contains buttons to confirm booking or cancel them 
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
@@ -361,6 +377,8 @@ require "incl/HotelInfo.php";
                 echo "Spa<br>";
                 echo "Buffet<br>";
                 echo "Free Parking<br><br>";
+                echo "<hr>";
+                echo "<br>";
                 //Div that contains buttons to confirm booking or cancel them 
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
@@ -397,6 +415,8 @@ require "incl/HotelInfo.php";
                 echo "Spa<br>";
                 echo "Buffet<br>";
                 echo "Free Parking<br><br>";
+                echo "<hr>";
+                echo "<br>";
                 //Div that contains buttons to confirm booking or cancel them 
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";

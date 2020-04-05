@@ -59,14 +59,6 @@ require_once "incl/HotelInfo.php";
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
     </header>
 
@@ -140,7 +132,7 @@ require_once "incl/HotelInfo.php";
             <div class="row">
                 <div class="col">
                     <!-- Card 1: Yotel Hotel -->
-                    <div class="card" style="width: 18rem;">
+                    <div class="card mx-auto mt-4" style="width: 18rem;">
                         <img src="images/yotelMain.jpg" class="card-img-top" alt="Yotel Hotel">
                         <div class="card-body">
                             <h4 class="card-title">Yotel Hotel</h4>
@@ -156,7 +148,7 @@ require_once "incl/HotelInfo.php";
                 </div>
                 <div class="col">
                     <!-- Card 2: Ibis Hotel -->
-                    <div class="card" style="width: 18rem;">
+                    <div class="card  mx-auto mt-4" style="width: 18rem;">
                         <img src="images/ibisMain.jpg" class="card-img-top" alt="Ibis Hotel">
                         <div class="card-body">
                             <h4 class="card-title">Ibis Hotel</h4>
@@ -172,7 +164,7 @@ require_once "incl/HotelInfo.php";
                 </div>
                 <div class="col">
                     <!-- Card 3: Hotel Indigo  -->
-                    <div class="card" style="width: 18rem;">
+                    <div class="card mx-auto mt-4" style="width: 18rem;">
                         <img src="images/indigoMain.jpg" class="card-img-top" alt="Hotel Indigo">
                         <div class="card-body">
                             <h4 class="card-title">Hotel Indigo</h4>
@@ -189,13 +181,12 @@ require_once "incl/HotelInfo.php";
             </div>
         </div>
 
-        <br>
 
         <div class="container">
             <div class="row">
                 <div class="col">
                     <!-- Card 4: Sandman Hotel -->
-                    <div class="card" style="width: 18rem;">
+                    <div class="card mx-auto mt-4" style="width: 18rem;">
                         <img src="images/sandmanMain.jpg" class="card-img-top" alt="Sandman Hotel">
                         <div class="card-body">
                             <h4 class="card-title">Sandman Hotel</h4>
@@ -212,7 +203,7 @@ require_once "incl/HotelInfo.php";
                 <br>
                 <div class="col">
                     <!-- Card 6: Motel One Hotel -->
-                    <div class="card" style="width: 18rem;">
+                    <div class="card mx-auto mt-4" style="width: 18rem;">
                         <img src="images/motelMain.jpg" class="card-img-top" alt="Motel One Hotel">
                         <div class="card-body">
                             <h4 class="card-title">Motel One Hotel</h4>
@@ -229,7 +220,7 @@ require_once "incl/HotelInfo.php";
                 </div>
                 <div class="col">
                     <!-- Card 7: Radisson Red Hotel -->
-                    <div class="card" style="width: 18rem;">
+                    <div class="card mx-auto mt-4" style="width: 18rem;">
                         <img src="images/radissonMain.jpg" class="card-img-top" alt="Radisson Red Hotel">
                         <div class="card-body">
                             <h4 class="card-title">Radisson Red Hotel</h4>
@@ -246,13 +237,12 @@ require_once "incl/HotelInfo.php";
             </div>
         </div>
 
-        <br>
 
         <div class="container">
             <div class="row">
                 <div class="col">
                     <!-- Card 8: Residence Inn Hotel -->
-                    <div class="card" style="width: 18rem;">
+                    <div class="card mx-auto mt-4" style="width: 18rem;">
                         <img src="images/residenceMain.jpg" class="card-img-top" alt="Residence Inn">
                         <div class="card-body">
                             <h4 class="card-title">Residence Inn Hotel</h4>
@@ -268,7 +258,7 @@ require_once "incl/HotelInfo.php";
                 </div>
                 <div class="col">
                     <!-- Card 9: Hampton Hotel -->
-                    <div class="card" style="width: 18rem;">
+                    <div class="card mx-auto mt-4" style="width: 18rem;">
                         <img src="images/hamptonMain.jpg" class="card-img-top" alt="Hampton Hotel">
                         <div class="card-body">
                             <h4 class="card-title">Hampton Hotel</h4>
@@ -284,7 +274,7 @@ require_once "incl/HotelInfo.php";
                 </div>
                 <div class="col">
                     <!-- Card 10: Alexandra Hotel -->
-                    <div class="card" style="width: 18rem;">
+                    <div class="card mx-auto mt-4" style="width: 18rem;">
                         <img src="images/alexandraMain.jpg" class="card-img-top" alt="Alexandra Hotel">
                         <div class="card-body">
                             <h4 class="card-title">Alexandra Hotel</h4>
