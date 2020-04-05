@@ -88,28 +88,27 @@ require "incl/HotelInfo.php";
             
 
             <?php
-            // echo "<div class=\"control\" >";
-            // echo "<form action=\"finish.php\" method=\"post\">";
 
             //Yotel Hotel 
 
             if ($_POST['hotel1']) {
                 echo "<div class=\"column\">";
-                echo "<div class=\"form entry display\" id=\"move\">";
-                echo "<img id=\"imagesd\" src=\"images/yotelMain.jpg\" alt=\"Yotel Hotel\" width=\"260px\"><br><br>";
-                echo "<b>You are viewing the ";
+                echo "<div class=\"card mx-auto mt-4\" style=\"width: 18rem;\">";
+                echo "<img src=\"images/yotelMain.jpg\" class=\"card-img-top\" alt=\"Yotel Hotel\"><br>";
+                echo "<div class=\"card-body\">";
+                echo "<b  class=\"card-title\">You are viewing the ";
                 echo $Yotel->name . " Hotel for ";
                 $date1 = $_POST['in'];
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>.  <br><br> The Daily Rate is: R" . $Yotel->price . "<br><br> The Total Cost for your stay will be " . "R";
-                    echo floor($Yotel->price * $diff);
+                    echo $diff . " nights</b>. <hr><br> The Daily Rate is: R<b>" . $Yotel->price . "</b><br><br> The Total Cost for your stay will be " . "R";
+                    echo "<b>".floor($Yotel->price * $diff)."</b>";
                 } elseif ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
                 }
-                echo "<br><br><u>Facilities Include:</u><br>";
+                echo "<br><br><u><b>Facilities Include:</b></u><br>";
                 echo "Wifi<br>";
                 echo "Bar<br>";
                 echo "Buffet<br>";
@@ -120,7 +119,8 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel1\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel1\" class=\"labeled\">   Select this hotel</label>";
+                echo "<label for=\"hotel1\" class=\"labeled\"><b>   Select this hotel</b></label>";
+                echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
@@ -131,22 +131,23 @@ require "incl/HotelInfo.php";
 
             if ($_POST['hotel2']) {
                 echo "<div class=\"column\">";
-                echo "<div class=\"form entry display\" id=\"move\">";
-                echo "<img id=\"imagesd\" src=\"images/ibisMain.jpg\" alt=\"Ibis Hotel\" width=\"260px\"><br><br>";
-                echo "<b>You are viewing the ";
+                echo "<div class=\"card mx-auto mt-4\" style=\"width: 18rem;\">";
+                echo "<img src=\"images/ibisMain.jpg\" class=\"card-img-top\" alt=\"Ibis Hotel\"><br>";
+                echo "<div class=\"card-body\">";
+                echo "<b  class=\"card-title\">You are viewing the ";
                 echo $Ibis->name . " Hotel for ";
                 $date1 = $_POST['in'];
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>. <br><br> The Daily Rate is: R" . $Ibis->price . "<br><br> The Total Cost will be " . "R";
-                    echo floor($Ibis->price * $diff);
+                    echo $diff . " nights</b>. <hr><br> The Daily Rate is: R<b>" . $Ibis->price . "</b><br><br> The Total Cost will be " . "R";
+                    echo "<b>".floor($Ibis->price * $diff)."</b>";
                 }
                 if ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
                 }
-                echo " <br><br><u>Facilities Include:</u><br>";
+                echo " <br><br><u><b>Facilities Include:</b></u><br>";
                 echo "Wifi<br>";
                 echo "Pool<br>";
                 echo "Bar<br>";
@@ -158,7 +159,8 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel2\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel2\" class=\"labeled\">Select this hotel</label>";
+                echo "<label for=\"hotel2\" class=\"labeled\"><b>Select this hotel</b></label>";
+                echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
@@ -169,22 +171,23 @@ require "incl/HotelInfo.php";
 
             if ($_POST['hotel3']) {
                 echo "<div class=\"column\">";
-                echo "<div class=\"form entry display\" id=\"move\">";
-                echo "<img id=\"imagesd\" src=\"images/indigoMain.jpg\" alt=\"Indigo Hotel\" width=\"260px\"><br><br>";
-                echo "<b>You are viewing the ";
+                echo "<div class=\"card mx-auto mt-4\" style=\"width: 18rem;\">";
+                echo "<img src=\"images/indigoMain.jpg\" class=\"card-img-top\" alt=\"Hotel Indigo\"><br>";
+                echo "<div class=\"card-body\">";
+                echo "<b  class=\"card-title\">You are viewing the ";
                 echo $Indigo->name . " Hotel for ";
                 $date1 = $_POST['in'];
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" . $Indigo->price . "<br><br> The Total Cost will be " . "R";
-                    echo floor($Indigo->price * $diff);
+                    echo $diff . " nights</b>.  <hr><br> The Daily Rate is: R<b>" . $Indigo->price . "</b><br><br> The Total Cost will be " . "R";
+                    echo "<b>".floor($Indigo->price * $diff)."</b>";
                 }
                 if ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
                 }
-                echo " <br><br><u>Facilities Include:</u><br>";
+                echo " <br><br><u><b>Facilities Include:</b></u><br>";
                 echo "Wifi<br>";
                 echo "Pool<br>";
                 echo "Bar<br>";
@@ -197,7 +200,8 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel3\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel3\" class=\"labeled\">Select this hotel</label>";
+                echo "<label for=\"hotel3\" class=\"labeled\"><b>Select this hotel</b></label>";
+                echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
@@ -208,22 +212,23 @@ require "incl/HotelInfo.php";
 
             if ($_POST['hotel4']) {
                 echo "<div class=\"column\">";
-                echo "<div class=\"form entry display\" id=\"move\">";
-                echo "<img id=\"imagesd\" src=\"images/sandmanMain.jpg\" alt=\"Sandman Hotel\" width=\"260px\"><br><br>";
-                echo "<b>You are viewing the ";
+                echo "<div class=\"card mx-auto mt-4\" style=\"width: 18rem;\">";
+                echo "<img src=\"images/sandmanMain.jpg\" class=\"card-img-top\" alt=\"Sandman Hotel\"><br>";
+                echo "<div class=\"card-body\">";
+                echo "<b  class=\"card-title\">You are viewing the ";
                 echo $Sandman->name . " Hotel for ";
                 $date1 = $_POST['in'];
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" . $Sandman->price . "<br><br> The Total Cost will be " . "R";
-                    echo floor($Sandman->price * $diff);
+                    echo $diff . " nights</b>.   <hr><br> The Daily Rate is: R<b>" . $Sandman->price . "</b><br><br> The Total Cost will be " . "R";
+                    echo "<b>".floor($Sandman->price * $diff)."</b>";
                 }
                 if ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
                 }
-                echo " <br><br><u>Facilities Include:</u><br>";
+                echo " <br><br><u><b>Facilities Include:</b></u><br>";
                 echo "Wifi<br>";
                 echo "Bar<br>";
                 echo "Smoking Friendly<br><br>";
@@ -233,7 +238,8 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel4\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel4\" class=\"labeled\">Select this hotel</label>";
+                echo "<label for=\"hotel4\" class=\"labeled\"><b>Select this hotel</b></label>";
+                echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
@@ -244,22 +250,23 @@ require "incl/HotelInfo.php";
 
             if ($_POST['hotel6']) {
                 echo "<div class=\"column\">";
-                echo "<div class=\"form entry display\" id=\"move\">";
-                echo "<img id=\"imagesd\" src=\"images/motelMain.jpg\" alt=\"Motel One Hotel\" width=\"260px\"><br><br>";
-                echo "<b>You are viewing the ";
+                echo "<div class=\"card mx-auto mt-4\" style=\"width: 18rem;\">";
+                echo "<img src=\"images/motelMain.jpg\" class=\"card-img-top\" alt=\"Motel One Hotel\"><br>";
+                echo "<div class=\"card-body\">";
+                echo "<b  class=\"card-title\">You are viewing the ";
                 echo $Motel->name . " Hotel for ";
                 $date1 = $_POST['in'];
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" . $Motel->price . "<br><br> The Total Cost will be " . "R";
-                    echo floor($Motel->price * $diff);
+                    echo $diff . " nights</b>.   <hr><br> The Daily Rate is: R<b>" . $Motel->price . "</b><br><br> The Total Cost will be " . "R";
+                    echo "<b>".floor($Motel->price * $diff)."</b>";
                 }
                 if ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
                 }
-                echo " <br><br><u>Facilities Include:</u><br>";
+                echo " <br><br><u><b>Facilities Include:</b></u><br>";
                 echo "Bar<br>";
                 echo "Buffet<br>";
                 echo "Free Parking<br><br>";
@@ -269,7 +276,8 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel6\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel6\" class=\"labeled\">Select this hotel</label>";
+                echo "<label for=\"hotel6\" class=\"labeled\"><b>Select this hotel</b></label>";
+                echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
@@ -280,22 +288,23 @@ require "incl/HotelInfo.php";
 
             if ($_POST['hotel7']) {
                 echo "<div class=\"column\">";
-                echo "<div class=\"form entry display\" id=\"move\">";
-                echo "<img id=\"imagesd\" src=\"images/radissonMain.jpg\" alt=\"Radisson Hotel\" width=\"260px\"><br><br>";
-                echo "<b>You are viewing the ";
+                echo "<div class=\"card mx-auto mt-4\" style=\"width: 18rem;\">";
+                echo "<img src=\"images/radissonMain.jpg\" class=\"card-img-top\" alt=\"Radisson Red Hotel\"><br>";
+                echo "<div class=\"card-body\">";
+                echo "<b  class=\"card-title\">You are viewing the ";
                 echo $Radisson->name . " Hotel for ";
                 $date1 = $_POST['in'];
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" . $Radisson->price . "<br><br> The Total Cost will be " . "R";
-                    echo floor($Radisson->price * $diff);
+                    echo $diff . " nights</b>.  <hr><br> The Daily Rate is: R<b>" . $Radisson->price . "</b><br><br> The Total Cost will be " . "R";
+                    echo "<b>".floor($Radisson->price * $diff)."</b>";
                 }
                 if ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
                 }
-                echo " <br><br><u>Facilities Include:</u><br>";
+                echo " <br><br><u><b>Facilities Include:</b></u><br>";
                 echo "Wifi<br>";
                 echo "Pool<br>";
                 echo "Bar<br>";
@@ -308,7 +317,8 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel7\" value=\"  Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel7\" class=\"labeled\">Select this hotel</label>";
+                echo "<label for=\"hotel7\" class=\"labeled\"><b>Select this hotel</b></label>";
+                echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
@@ -319,22 +329,23 @@ require "incl/HotelInfo.php";
 
             if ($_POST['hotel8']) {
                 echo "<div class=\"column\">";
-                echo "<div class=\"form entry display\" id=\"move\">";
-                echo "<img id=\"imagesd\" src=\"images/residenceMain.jpg\" alt=\"Residence Inn Hotel\" width=\"260px\"><br><br>";
-                echo "<b>You are viewing the ";
+                echo "<div class=\"card mx-auto mt-4\" style=\"width: 18rem;\">";
+                echo "<img src=\"images/residenceMain.jpg\" class=\"card-img-top\" alt=\"Residence Inn\"><br>";
+                echo "<div class=\"card-body\">";
+                echo "<b  class=\"card-title\">You are viewing the ";
                 echo $Residence->name . " Hotel for ";
                 $date1 = $_POST['in'];
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" . $Residence->price . "<br><br> The Total Cost will be " . "R";
-                    echo floor($Residence->price * $diff);
+                    echo $diff . " nights</b>.   <hr><br> The Daily Rate is: R<b>" . $Residence->price . "</b><br><br> The Total Cost will be " . "R";
+                    echo "<b>".floor($Residence->price * $diff)."</b>";
                 }
                 if ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
                 }
-                echo " <br><br><u>Facilities Include:</u><br>";
+                echo " <br><br><u><b>Facilities Include:</b></u><br>";
                 echo "Wifi<br>";
                 echo "Bar<br>";
                 echo "Spa<br>";
@@ -345,7 +356,8 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel8\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel8\" class=\"labeled\">Select this hotel</label>";
+                echo "<label for=\"hotel8\" class=\"labeled\"><b>Select this hotel</b></label>";
+                echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
@@ -356,22 +368,23 @@ require "incl/HotelInfo.php";
 
             if ($_POST['hotel9']) {
                 echo "<div class=\"column\">";
-                echo "<div class=\"form entry display\" id=\"move\">";
-                echo "<img id=\"imagesd\" src=\"images/hamptonMain.jpg\" alt=\"Hampton Hotel\" width=\"260px\"><br><br>";
-                echo "<b>You are viewing the ";
+                echo "<div class=\"card mx-auto mt-4\" style=\"width: 18rem;\">";
+                echo "<img src=\"images/hamptonMain.jpg\" class=\"card-img-top\" alt=\"Hampton Hotel\"><br>";
+                echo "<div class=\"card-body\">";
+                echo "<b  class=\"card-title\">You are viewing the ";
                 echo $Hampton->name . " Hotel for ";
                 $date1 = $_POST['in'];
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" . $Hampton->price . "<br><br> The Total Cost will be " . "R";
-                    echo floor($Hampton->price * $diff);
+                    echo $diff . " nights</b>.   <hr><br> The Daily Rate is: R<b>" . $Hampton->price . "</b><br><br> The Total Cost will be " . "R";
+                    echo "<b>".floor($Hampton->price * $diff)."</b>";
                 }
                 if ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
                 }
-                echo " <br><br><u>Facilities Include:</u><br>";
+                echo " <br><br><u><b>Facilities Include:</b></u><br>";
                 echo "Wifi<br>";
                 echo "Bar<br>";
                 echo "Spa<br>";
@@ -383,7 +396,8 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel9\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel9\" class=\"labeled\">Select this hotel</label>";
+                echo "<label for=\"hotel9\" class=\"labeled\"><b>Select this hotel</b></label>";
+                echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";
@@ -394,22 +408,23 @@ require "incl/HotelInfo.php";
 
             if ($_POST['hotel10']) {
                 echo "<div class=\"column\">";
-                echo "<div class=\"form entry display\" id=\"move\">";
-                echo "<img id=\"imagesd\" src=\"images/alexandraMain.jpg\" alt=\"Alexandra Hotel\" width=\"260px\"><br><br>";
-                echo "<b>You are viewing the ";
+                echo "<div class=\"card mx-auto mt-4\" style=\"width: 18rem;\">";
+                echo "<img src=\"images/alexandraMain.jpg\" class=\"card-img-top\" alt=\"Alexandra Hotel\"><br>";
+                echo "<div class=\"card-body\">";
+                echo "<b  class=\"card-title\">You are viewing the ";
                 echo $Alexandra->name . " Hotel for ";
                 $date1 = $_POST['in'];
                 $date2 = $_POST['out'];
                 // Formula to convert the dates into days   
                 $diff = floor(strtotime($date2) - strtotime($date1)) / 86400;
                 if ($diff >= 1) {
-                    echo $diff . " nights</b>.   <br><br> The Daily Rate is: R" . $Alexandra->price . "<br><br> The Total Cost will be " . "R";
-                    echo floor($Alexandra->price * $diff);
+                    echo $diff . " nights</b>.   <hr><br> The Daily Rate is: R<b>" . $Alexandra->price . "</b><br><br> The Total Cost will be " . "R";
+                    echo "<b>".floor($Alexandra->price * $diff)."</b>";
                 }
                 if ($diff < 1) {
                     echo ": <br>ERROR: PLEASE SELECT VALID DATES, DATES MUST BE ONE NIGHT OR MORE. <BR> PLEASE CLICK ON CANCEL AND TRY AGAIN!";
                 }
-                echo " <br><br><u><u>Facilities Include:</u></u><br>";
+                echo " <br><br><u><u><b>Facilities Include:</b></u></u><br>";
                 echo "Wifi<br>";
                 echo "Bar<br>";
                 echo "Spa<br>";
@@ -421,7 +436,8 @@ require "incl/HotelInfo.php";
                 echo "<div class=\"control\" >";
                 echo "<form action=\"finish.php\" method=\"post\">";
                 echo "<input type=\"checkbox\" name=\"hotel10\" value=\"Select this hotel\" class=\"check\"/>";
-                echo "<label for=\"hotel10\" class=\"labeled\">Select this hotel</label>";
+                echo "<label for=\"hotel10\" class=\"labeled\"><b>Select this hotel</b></label>";
+                echo "</div>";
                 echo "</div>";
                 echo "</div>";
                 echo "</div>";

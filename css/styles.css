@@ -120,6 +120,10 @@ img .imagesd{
     border: #31BDE6 solid 2.5px;
 }
 
+.view{
+    font-size: 20px;
+}
+
 /* -------------------------------------------------------------------------------------------------------- */
 
 
@@ -169,8 +173,8 @@ input[type=submit]:hover {
 /*finish.php*/
 
 #move {
-    margin-top: 15%;
-    margin-bottom: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     height: 100%;
     text-align: center;
 }
