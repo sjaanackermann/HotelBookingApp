@@ -91,7 +91,7 @@ require "incl/HotelInfo.php";
 
             //Yotel Hotel 
 
-            if ($_POST['hotel1']) {
+            if (isset($_POST['hotel1'])) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"card mx-auto mt-4\" style=\"width: 18rem;\">";
                 echo "<img src=\"images/yotelMain.jpg\" class=\"card-img-top\" alt=\"Yotel Hotel\"><br>";
@@ -129,7 +129,7 @@ require "incl/HotelInfo.php";
 
             //Ibis Hotel
 
-            if ($_POST['hotel2']) {
+            if (isset($_POST['hotel2'])) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"card mx-auto mt-4\" style=\"width: 18rem;\">";
                 echo "<img src=\"images/ibisMain.jpg\" class=\"card-img-top\" alt=\"Ibis Hotel\"><br>";
@@ -169,7 +169,7 @@ require "incl/HotelInfo.php";
 
             //Hotel Indigo
 
-            if ($_POST['hotel3']) {
+            if (isset($_POST['hotel3'])) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"card mx-auto mt-4\" style=\"width: 18rem;\">";
                 echo "<img src=\"images/indigoMain.jpg\" class=\"card-img-top\" alt=\"Hotel Indigo\"><br>";
@@ -210,7 +210,7 @@ require "incl/HotelInfo.php";
 
             //Sandman Hotel
 
-            if ($_POST['hotel4']) {
+            if (isset($_POST['hotel4'])) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"card mx-auto mt-4\" style=\"width: 18rem;\">";
                 echo "<img src=\"images/sandmanMain.jpg\" class=\"card-img-top\" alt=\"Sandman Hotel\"><br>";
@@ -248,7 +248,7 @@ require "incl/HotelInfo.php";
 
             //Motel One Hotel
 
-            if ($_POST['hotel6']) {
+            if (isset($_POST['hotel6'])) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"card mx-auto mt-4\" style=\"width: 18rem;\">";
                 echo "<img src=\"images/motelMain.jpg\" class=\"card-img-top\" alt=\"Motel One Hotel\"><br>";
@@ -286,7 +286,7 @@ require "incl/HotelInfo.php";
 
             //Radisson Hotel
 
-            if ($_POST['hotel7']) {
+            if (isset($_POST['hotel7'])) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"card mx-auto mt-4\" style=\"width: 18rem;\">";
                 echo "<img src=\"images/radissonMain.jpg\" class=\"card-img-top\" alt=\"Radisson Red Hotel\"><br>";
@@ -327,7 +327,7 @@ require "incl/HotelInfo.php";
 
             //Residence Inn Hotel
 
-            if ($_POST['hotel8']) {
+            if (isset($_POST['hotel8'])) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"card mx-auto mt-4\" style=\"width: 18rem;\">";
                 echo "<img src=\"images/residenceMain.jpg\" class=\"card-img-top\" alt=\"Residence Inn\"><br>";
@@ -366,7 +366,7 @@ require "incl/HotelInfo.php";
 
             //Hampton Hotel
 
-            if ($_POST['hotel9']) {
+            if (isset($_POST['hotel9'])) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"card mx-auto mt-4\" style=\"width: 18rem;\">";
                 echo "<img src=\"images/hamptonMain.jpg\" class=\"card-img-top\" alt=\"Hampton Hotel\"><br>";
@@ -406,7 +406,7 @@ require "incl/HotelInfo.php";
 
             //Alexandra Hotel
 
-            if ($_POST['hotel10']) {
+            if (isset($_POST['hotel10'])) {
                 echo "<div class=\"column\">";
                 echo "<div class=\"card mx-auto mt-4\" style=\"width: 18rem;\">";
                 echo "<img src=\"images/alexandraMain.jpg\" class=\"card-img-top\" alt=\"Alexandra Hotel\"><br>";
