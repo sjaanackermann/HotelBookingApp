@@ -88,18 +88,29 @@ use PHPMailer\PHPMailer\Exception;
                     Please see details of the booking new enquiry below: <br>
                     <b>Client Name & Surname:</b> " . $_SESSION['name'] . " " . $_SESSION['surname'] . "<br>
                     <b>Client Email:</b> " . $_SESSION['email'] . "<br>
-                    <b>Selected Hotel: </b>" .
-            (($_POST["hotel1"]) ? "Yotel Hotel" : "") .
-            (($_POST["hotel2"]) ? "Ibis Hotel" : "") .
-            (($_POST["hotel3"]) ? "Hotel Indigo" : "") .
-            (($_POST["hotel4"]) ? "Sandman Hotel" : "") .
-            (($_POST["hotel5"]) ? "Sleeperz Hotel" : "") .
-            (($_POST["hotel6"]) ? "Motel One Hotel" : "") .
-            (($_POST["hotel7"]) ? "Radisson Hotel" : "") .
-            (($_POST["hotel8"]) ? "Residence Inn Hotel" : "") .
-            (($_POST["hotel9"]) ? "Hampton Hotel" : "") .
-            (($_POST["hotel10"]) ? "Alexandra Hotel" : "") .
-            "<br>
+                    <b>Selected Hotel: </b>";
+                    if(isset(($_POST["hotel1"]))){
+                        (($_POST["hotel1"]) ? "Yotel Hotel" : "");
+                    }if(isset(($_POST["hotel2"]))){
+                        (($_POST["hotel2"]) ? "Ibis Hotel" : "");
+                    }if(isset(($_POST["hotel3"]))){
+                        (($_POST["hotel3"]) ? "Hotel Indigo" : "");
+                    }if(isset(($_POST["hotel4"]))){
+                        (($_POST["hotel4"]) ? "Sandman Hotel" : "");
+                    }if(isset(($_POST["hotel5"]))){
+                        (($_POST["hotel5"]) ? "Sleeperz Hotel" : "");
+                    }if(isset(($_POST["hotel6"]))){
+                        (($_POST["hotel6"]) ? "Motel One Hotel" : "");
+                    }if(isset(($_POST["hotel7"]))){
+                        (($_POST["hotel7"]) ? "Radisson Hotel" : "");
+                    }if(isset(($_POST["hotel8"]))){
+                        (($_POST["hotel8"]) ? "Residence Inn Hotel" : "");
+                    }if(isset(($_POST["hotel9"]))){
+                        (($_POST["hotel9"]) ? "Hampton Hotel" : "");
+                    }if(isset(($_POST["hotel10"]))){
+                        (($_POST["hotel10"]) ? "Alexandra Hotel" : "");
+                    }
+             "<br>
                     <b>From :</b> " . $_SESSION['in'] . " to : " . $_SESSION['out'] . "<br>";
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
